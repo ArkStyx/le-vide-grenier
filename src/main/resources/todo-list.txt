@@ -1,0 +1,68 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Plusieurs Catégories
+- Immobilier
+- Véhicules
+- Vacances
+- Emploi
+- Mode
+- Maison
+- Multimédia
+- Loisirs
+- Matériel Professionnel
+- Autres
+
+Plusieurs Sous-Catégories
+- TODO - LISTE POUR CHAQUE CATEGORIES
+
+-------------------------
+
+Plusieurs filtres
+- TODO - LISTE POUR CHAQUE FILTRE
+
+Plusieurs sous-catégorie de filtres par filtre
+- TODO - LISTE POUR CHAQUE SOUS-CATEGORIES DE FILTRE
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+00) LOGICIELS
+- Installer Lombok					====>	OK
+- Installer Git
+- Installer GitHub	
+- Installer PostGreSQL
+- Installer Liquibase
+
+
+01) GIT
+01.1) Installer Git
+01.2) Installer GitHub	
+01.3) Pousser le projet sur GitHub
+01.4) Aller dans le repertoire du projet à pousser
+01.5) faire dans gitbash la commande suivante : "git init"
+
+01) BDD
+- Réfléchir au schéma de données
+
+02) BACK
+- Controller
+- Service
+- Dao
+- Security
+- AOP
+- Classes :
+==>	Classes de filtres
+====>	Classe mere filtre
+====>	Classes variees suivant les types d'achat
+
+==>	Classes utilisateur
+
+==> Classes catégories
+====>	Classes sous-categories (meme classe ?)
+
+03) FRONT
+- React pour attendre une nouvelle techno
