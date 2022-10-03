@@ -43,7 +43,24 @@ Plusieurs sous-catégorie de filtres par filtre
 01.2) Installer GitHub	
 01.3) Pousser le projet sur GitHub
 01.4) Aller dans le repertoire du projet à pousser
-01.5) faire dans gitbash la commande suivante : "git init"
+01.5) Dans gitbash faire commande suivante - initialiser le projet Spring Boot :	"git init"
+01.6) Dans gitbash faire commande suivante - ajouter tous les fichiers existants :	"git add ."
+01.7) Dans gitbash faire commande suivante - ajouter son mail utilisateur :			"git config --global user.email" [EMAIL_UTILISATEUR]
+01.8) Dans gitbash faire commande suivante - ajouter son nom utilisateur : 			"git config --global user.name" [NOM_UTILISATEUR]
+
+
+
+git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
+git remote -v
+git push origin main (ou "master")
+
+
+01.8) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 		"git checkout"
+01.8) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 		"git add src/main/resources/todo-list.txt"
+
+
+
+
 
 01) BDD
 - Réfléchir au schéma de données
@@ -66,3 +83,20 @@ Plusieurs sous-catégorie de filtres par filtre
 
 03) FRONT
 - React pour attendre une nouvelle techno
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+A LIRE
+
+https://www.edureka.co/blog/git-commands-with-example/
+
+https://stackoverflow.com/questions/20467179/git-push-rejected-non-fast-forward
+
+
+
+
+
+
