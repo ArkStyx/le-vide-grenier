@@ -63,7 +63,7 @@ DANS L'ORDRE (?)
 01.XXX) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 			"git checkout"
 01.XXX) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 				"git add src/main/resources/todo-list.txt"
 01.XXX) Dans gitbash faire commande suivante - XXX :										"git fetch"
-01.XXX) Dans gitbash faire commande suivante - pousser sur la branche distante "origin" :	"git push origin main" (ou "master")
+01.XXX) Dans gitbash faire commande suivante - pousser sur la branche distante "origin" :	"git push origin [NOM_BRANCHE]" ("main", "master", "develop")
 
 
 
