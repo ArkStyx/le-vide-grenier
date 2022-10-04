@@ -49,9 +49,8 @@ Plusieurs sous-catégorie de filtres par filtre
 01.8) Dans gitbash faire commande suivante - ajouter son nom utilisateur : 			"git config --global user.name" [NOM_UTILISATEUR]
 
 
-
+REMETTRE DANS L'ORDRE :
 01.XXX) Dans gitbash faire commande suivante - ??? :					git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
-
 
 01.XXX) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 	"git checkout"
 01.XXX) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 		"git add src/main/resources/todo-list.txt"
@@ -60,14 +59,12 @@ Plusieurs sous-catégorie de filtres par filtre
 01.XXX) Dans gitbash faire commande suivante - verifier nom et adresse distante :			"git remote -v"
 01.XXX) Dans gitbash faire commande suivante - pousser sur la branche distante "origin" :	"git push origin main" (ou "master")
 
-
-
-
 DANS L'ORDRE (?)
-01.XXX) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 	"git checkout"
-01.XXX) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 		"git add src/main/resources/todo-list.txt"
-01.XXX) Dans gitbash faire commande suivante - XXX :								"git fetch"
+01.XXX) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 			"git checkout"
+01.XXX) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 				"git add src/main/resources/todo-list.txt"
+01.XXX) Dans gitbash faire commande suivante - XXX :										"git fetch"
 01.XXX) Dans gitbash faire commande suivante - pousser sur la branche distante "origin" :	"git push origin main" (ou "master")
+
 
 
 
