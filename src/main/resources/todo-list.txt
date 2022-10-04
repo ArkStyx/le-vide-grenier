@@ -31,14 +31,15 @@ Plusieurs sous-catégorie de filtres par filtre
 -----------------------------------------------------------------------------------------------------------------------------
 
 00) LOGICIELS
-- Installer Lombok					====>	OK
-- Installer Git
-- Installer GitHub	
-- Installer PostGreSQL
+- Installer Lombok			====>	OK
+- Installer Git				====>	OK
+- Installer GitHub			====>	OK
+- Installer PostGreSQL		====>	OK
+- Installer PgAdmin			====>	OK
 - Installer Liquibase
 
 
-01) GIT
+01) DEPLOYER LE PROJET SUR GITHUB
 01.1) Installer Git
 01.2) Installer GitHub	
 01.3) Pousser le projet sur GitHub
@@ -67,12 +68,11 @@ DANS L'ORDRE (?)
 
 
 
-
-
-01) BDD
+02) BDD
 - Réfléchir au schéma de données
 
-02) BACK
+
+03) BACK
 - Controller
 - Service
 - Dao
@@ -88,8 +88,9 @@ DANS L'ORDRE (?)
 ==> Classes catégories
 ====>	Classes sous-categories (meme classe ?)
 
-03) FRONT
-- React pour attendre une nouvelle techno
+
+04) FRONT
+- React pour apprendre une nouvelle techno
 
 
 
