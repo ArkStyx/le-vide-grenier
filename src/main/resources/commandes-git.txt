@@ -1,0 +1,36 @@
+###########################################################################
+### Configurations globales ###
+###############################
+
+- ajouter son mail utilisateur :	"git config --global user.email" [EMAIL_UTILISATEUR]
+- ajouter son nom utilisateur : 	"git config --global user.name" [NOM_UTILISATEUR]
+
+- initialiser le projet Spring Boot :		"git init"
+- ajouter tous les fichiers existants :		"git add ."
+
+
+
+###########################################################################
+### Modifications de fichiers dans le workspace ###
+###################################################
+
+Vérifier les fichiers modifiés :	"git checkout"
+Ajouter les fichiers modifiés : 	"git add src/main/resources/todo-list.txt"
+
+
+###########################################################################
+### Envoies de fichiers sur le repository ###
+#############################################
+
+- verifier nom et adresse distante du repository :	"git remote -v"
+- pousser sur la branche distante "origin" :		"git push origin main" (ou "master")
+
+
+
+
+TODO COMPRENDRE CE QUE CA FAIT EXACTEMENT
+01.XXX) Dans gitbash faire commande suivante - ??? :					git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
+01.XXX) Dans gitbash faire commande suivante - ??? :								"git fetch"
+01.XXX) Dans gitbash faire commande suivante - ??? :								"git rebase origin/master"
+
+

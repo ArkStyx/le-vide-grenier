@@ -50,13 +50,13 @@ Plusieurs sous-catégorie de filtres par filtre
 
 
 
-01.XXX) Dans gitbash faire commande suivante - ??? :					git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
+01.XXX) Dans gitbash faire commande suivante - XXX :					git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
 
 
 01.XXX) Dans gitbash faire commande suivante - Vérifier les fichiers modifiés : 	"git checkout"
 01.XXX) Dans gitbash faire commande suivante - Ajouter les fichiers modifiés : 		"git add src/main/resources/todo-list.txt"
-01.XXX) Dans gitbash faire commande suivante - ??? :								"git fetch"
-01.XXX) Dans gitbash faire commande suivante - ??? :								"git rebase origin/master"
+01.XXX) Dans gitbash faire commande suivante - XXX :								"git fetch"
+01.XXX) Dans gitbash faire commande suivante - XXX :								"git rebase origin/master"
 01.XXX) Dans gitbash faire commande suivante - verifier nom et adresse distante :			"git remote -v"
 01.XXX) Dans gitbash faire commande suivante - pousser sur la branche distante "origin" :	"git push origin main" (ou "master")
 
@@ -108,7 +108,5 @@ https://stackoverflow.com/questions/20467179/git-push-rejected-non-fast-forward
 https://stackoverflow.com/questions/61753783/impossible-to-merge-branch-refusing-to-merge-unrelated-histories
 
 https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n
-
-
 
 
