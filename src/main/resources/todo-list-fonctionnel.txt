@@ -1,0 +1,32 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Plusieurs Catégories
+- Immobilier
+- Véhicules
+- Vacances
+- Emploi
+- Mode
+- Maison
+- Multimédia
+- Loisirs
+- Matériel Professionnel
+- Autres
+
+Plusieurs Sous-Catégories
+- TODO - LISTE POUR CHAQUE CATEGORIES
+
+-------------------------
+
+Plusieurs filtres
+- TODO - LISTE POUR CHAQUE FILTRE
+
+Plusieurs sous-catégorie de filtres par filtre
+- TODO - LISTE POUR CHAQUE SOUS-CATEGORIES DE FILTRE
+
+
+
+
+
