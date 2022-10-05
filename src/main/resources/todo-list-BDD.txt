@@ -1,0 +1,32 @@
+TODO CREER TABLES
+
+TB_UTILISATEUR
+- id
+- nom
+- prenom
+- numero telephone
+- numero telephone portable
+- email
+- adresse
+- ville
+
+TB_VILLE
+
+- id
+- libelle
+- code_postal
+
+TB_CODE POSTAL
+
+- id
+- libelle
+- departement
+
+TB_DEPARTEMENT
+- id
+- libelle
+
+--------------------------------------------------
+
+TB_ANNONCES (RECUPERER FICHIER SUR LES AUTRES SUR LA CLE USB)
+
