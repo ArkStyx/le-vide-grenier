@@ -9,10 +9,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AnnonceFiltreCommun {
 
-	private String categorie;
 	private int prixMinimum;
 	private int prixMaximum;
 	private boolean siOffre;
-	private boolean siAnnonceUrgente;
+	private boolean siAfficherSeulementAnnonceUrgente;
 	private boolean siVendeurParticulier;
 }

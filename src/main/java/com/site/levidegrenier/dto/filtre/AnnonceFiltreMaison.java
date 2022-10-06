@@ -11,5 +11,5 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AnnonceFiltreMaison extends AnnonceFiltreCommun {
 
-	private String typeAnimal;
+	private boolean siAfficherAnnonceAvecLivraison;
 }
