@@ -1,5 +1,7 @@
 package com.site.levidegrenier.dto.filtre;
 
+import java.util.Set;
+
 import com.site.levidegrenier.dto.AnnonceFiltreCommun;
 
 import lombok.Getter;
@@ -11,12 +13,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AnnonceFiltreImmobilier extends AnnonceFiltreCommun {
 
-	private String typeDeBien;
-	private String typeDeVente;
-	private int surfaceHabitableMinimum;
-	private int surfaceHabitableMaximum;
-	private int surfaceTerrainMinimum;
-	private int surfaceTerrainMaximum;
-	private int nombreDePieces;
-	private String classeEnergie;
+	private Set<String> listeTypeDeBien;
+	private Set<String> listeTypeDeVente;
+	private Integer surfaceHabitableMinimum;
+	private Integer surfaceHabitableMaximum;
+	private Integer surfaceTerrainMinimum;
+	private Integer surfaceTerrainMaximum;
+	private Integer nombreDePieces;
+	private Set<String> listeClasseEnergie;
 }
