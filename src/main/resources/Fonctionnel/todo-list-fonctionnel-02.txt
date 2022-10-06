@@ -3,13 +3,13 @@ Todo List :
 -----------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
-Plusieurs Catégories
+Plusieurs Catégories Annonces
 -	Immobilier
 -	Véhicules
 -	Animaux
 -	Maison
 
-Plusieurs Sous-Catégories
+Plusieurs Sous-Catégories Annonces
 -	Immobilier
 	-	Tout Immobilier
 	-	Ventes immobilières
@@ -46,7 +46,7 @@ Plusieurs Sous-Catégories
 -----------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
-Plusieurs filtres
+Plusieurs filtres Annonces
 -	Immobilier
 -	Véhicules
 -	Maison
@@ -55,7 +55,7 @@ Plusieurs filtres
 -------------------------
 -------------------------
 
-Plusieurs sous-catégorie de filtres par filtre
+Plusieurs sous-catégorie de filtres Annonces par filtre Annonces
 -	Immobilier : 
 
 	Catégorie
@@ -105,7 +105,7 @@ Plusieurs sous-catégorie de filtres par filtre
 -------------------------
 -------------------------
 
-Plusieurs sous-catégorie de filtres par filtre
+Plusieurs sous-catégorie de filtres Annonces par filtre Annonces
 -	Véhicules : 
 	Catégorie
 	====>	Véhicules
@@ -128,7 +128,7 @@ Plusieurs sous-catégorie de filtres par filtre
 -------------------------
 -------------------------
 
-Plusieurs sous-catégorie de filtres par filtre
+Plusieurs sous-catégorie de filtres Annonces par filtre Annonces
 -	Maison : 
 	Catégorie
 	====>	Maison
@@ -154,7 +154,7 @@ Plusieurs sous-catégorie de filtres par filtre
 -------------------------
 -------------------------
 
-Plusieurs sous-catégorie de filtres par filtre
+Plusieurs sous-catégorie de filtres Annonces par filtre Annonces
 -	Animaux : 
 	Catégorie
 	====>	Animaux
@@ -182,7 +182,7 @@ Plusieurs sous-catégorie de filtres par filtre
 -----------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
-SOUS-CATÉGORIE DE FILTRES - EN COMMUN
+SOUS-CATÉGORIE DE FILTRES ANNONCES - EN COMMUN
 
 	Catégorie
 	====>	Immobilier
@@ -204,15 +204,11 @@ SOUS-CATÉGORIE DE FILTRES - EN COMMUN
 	Type de vendeurs	
 	====>	Particuliers (444)
 	====>	Professionnels (6309)
-		
-	Type d’annonces	
-	====>	Offre
-	====>	Demande
 
 -------------------------
 -------------------------
 
-SOUS-CATEGORIE DE FILTRES - SPECIFIQUE
+SOUS-CATEGORIE DE FILTRES ANNONCE - SPECIFIQUE
 
 -	Immobilier :
 
