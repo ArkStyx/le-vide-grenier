@@ -204,10 +204,6 @@ SOUS-CATÉGORIE DE FILTRES ANNONCES - EN COMMUN
 	Type de vendeurs	
 	====>	Particuliers (444)
 	====>	Professionnels (6309)
-		
-	Type d’annonces	
-	====>	Offre
-	====>	Demande
 
 -------------------------
 -------------------------
