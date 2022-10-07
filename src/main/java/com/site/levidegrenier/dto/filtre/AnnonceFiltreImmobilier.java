@@ -13,8 +13,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AnnonceFiltreImmobilier extends AnnonceFiltreCommun {
 
-	private Set<String> listeTypeDeBien;
-	private Set<String> listeTypeDeVente;
+	private Set<String> listeTypeBien;
+	private Set<String> listeTypeVente;
 	private Integer surfaceHabitableMinimum;
 	private Integer surfaceHabitableMaximum;
 	private Integer surfaceTerrainMinimum;
