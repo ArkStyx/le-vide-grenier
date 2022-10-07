@@ -54,14 +54,15 @@ public class LeVideGrenierController {
 		listeClasseEnergie.add(UtilitaireFiltre.IMMOBILIER_CLASSE_ENERGIE_D);
 		
 		
-		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_DE_BIEN_MAISON ????
-		Set<String> listeTypeDeBien = new LinkedHashSet<>();
-		listeTypeDeBien.add(UtilitaireFiltre.IMMOBILIER_TYPE_DE_BIEN_MAISON);
+		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_MAISON ????
+		Set<String> listeTypeBien = new LinkedHashSet<>();
+		listeTypeBien.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_MAISON);
+		listeTypeBien.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_TERRAIN);
 		
-		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_DE_VENTE_ANCIEN ????
-		Set<String> listeTypeDeVente = new LinkedHashSet<>();
-		listeTypeDeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_DE_VENTE_ANCIEN);
-		listeTypeDeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_DE_VENTE_NEUF);
+		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN ????
+		Set<String> listeTypeVente = new LinkedHashSet<>();
+		listeTypeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN);
+		listeTypeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_NEUF);
 
 		AnnonceFiltreImmobilier annonceFiltreImmobilier = new AnnonceFiltreImmobilier();
 		annonceFiltreImmobilier.setPrixMinimum(null);
@@ -76,8 +77,8 @@ public class LeVideGrenierController {
 		annonceFiltreImmobilier.setSurfaceHabitableMaximum(null);
 		annonceFiltreImmobilier.setSurfaceTerrainMinimum(4000);
 		annonceFiltreImmobilier.setSurfaceTerrainMaximum(null);
-		annonceFiltreImmobilier.setListeTypeDeBien(listeTypeDeBien);
-		annonceFiltreImmobilier.setListeTypeDeVente(listeTypeDeVente);
+		annonceFiltreImmobilier.setListeTypeBien(listeTypeBien);
+		annonceFiltreImmobilier.setListeTypeVente(listeTypeVente);
 
 		return ResponseEntity.ok("methodeDeTest_FiltreImmobilier");
 	}
@@ -105,8 +106,31 @@ public class LeVideGrenierController {
 		annonceFiltreMaison.setSiOffre(true);
 		annonceFiltreMaison.setSiVendeurParticulier(true);
 		
-		annonceFiltreMaison.setSiAfficherAnnonceAvecLivraison(true);
+
+		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.MAISON_TYPE_PRODUIT_ARMOIRE ????
+		Set<String> listeTypeProduit = new LinkedHashSet<>();
+		listeTypeProduit.add(UtilitaireFiltre.MAISON_TYPE_PRODUIT_ARMOIRE);
+		listeTypeProduit.add(UtilitaireFiltre.MAISON_TYPE_PRODUIT_LIT);
 		
+		Set<String> listeTypeMatiere = new LinkedHashSet<>();
+		listeTypeMatiere.add(UtilitaireFiltre.MAISON_TYPE_MATIERE_BOIS);
+		listeTypeMatiere.add(UtilitaireFiltre.MAISON_TYPE_MATIERE_FER);
+		
+		Set<String> listeColoris = new LinkedHashSet<>();
+		listeColoris.add(UtilitaireFiltre.MAISON_COULEUR_BLANC);
+		listeColoris.add(UtilitaireFiltre.MAISON_COULEUR_BLEU);
+		
+		Set<String> listeEtat = new LinkedHashSet<>();
+		listeEtat.add(UtilitaireFiltre.MAISON_ETAT_TRES_BON);
+		listeEtat.add(UtilitaireFiltre.MAISON_ETAT_BON);
+		
+		annonceFiltreMaison.setSiAfficherAnnonceAvecLivraison(true);
+		annonceFiltreMaison.setListeTypeProduit(listeTypeProduit);
+		annonceFiltreMaison.setListeTypeMatiere(listeTypeMatiere);
+		annonceFiltreMaison.setListeColoris(listeColoris);
+		annonceFiltreMaison.setListeEtat(listeEtat);
+		annonceFiltreMaison.setSiAnnonceDisponible(true);
+
 		return ResponseEntity.ok("methodeDeTest_FiltreMaison");
 	}
 	// TODO A SUPPRIMER ----------------------------------------------------------------------------------------------------

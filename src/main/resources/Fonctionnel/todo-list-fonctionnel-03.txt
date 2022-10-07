@@ -1,0 +1,52 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Annonces :
+-	1.1 Categorie
+-	1.1 Sous-Categorie
+-	1.1 Filtre :
+	-	Prix Minimum
+	-	Prix Maximum
+	-	Type d’annonces (Offre/Demande)
+	-	Type de vendeurs (Particuliers/Professionnels)
+	-	Annonces urgentes (Oui/Non)
+
+	-	Sous-Filtre Immobilier :
+		-	Type de bien
+		-	Type de vente
+		-	Surface habitable Minimum
+		-	Surface habitable Maximum
+		-	Surface du terrain Minimum
+		-	Surface du terrain Maximum
+		-	Nombre de Pièces
+		-	Classe énergie
+
+	-	Sous-Filtre Maison :
+		-	Voir les annonces avec livraison également
+		-	Produit
+		-	Matière
+		-	Couleur
+		-	État
+
+	-	Sous-Filtre Animal	
+		-	Chiens
+		-	Chats
+		-	Autres Animaux
+		-	Accessoires
+-	0.N photos
+-	1.1 ville
+-	1.1 localisation GPS (comment faire ça ????)
+-	1.1 vendeur
+
+-------------------------
+-------------------------
+
+
+
+
+
+
+
+

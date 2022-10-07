@@ -136,6 +136,46 @@ Plusieurs sous-catégorie de filtres Annonces par filtre Annonces
 	Livraison
 	====>	Voir les annonces avec livraison également
 
+	Produit
+	====>	Accessoire
+	====>	Armoire
+	====>	Bar
+	====>	Bain & baignoire
+	====>	…
+	====>	Tout
+	
+	Matière
+	====>	Acier
+	====>	Bois
+	====>	Bois massif
+	====>	Bronze
+	====>	…
+	====>	Tout
+
+	Couleur
+	====>	Argenté
+	====>	Beige
+	====>	Blanc
+	====>	Bleu
+	====>	…
+	====>	Tout
+
+	État
+	====>	État neuf
+	====>	Très bon état
+	====>	Bon état
+	====>	État satisfaisant
+	====>	Pour pièces
+
+	Statut de l'annonce
+	====>	Annonces disponibles uniquement
+
+
+
+
+
+
+
 	Prix
 	====>	Minimum
 	====>	Maximum
