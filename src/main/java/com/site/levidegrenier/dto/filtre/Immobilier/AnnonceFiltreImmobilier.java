@@ -1,4 +1,4 @@
-package com.site.levidegrenier.dto.filtre;
+package com.site.levidegrenier.dto.filtre.Immobilier;
 
 import java.util.Set;
 

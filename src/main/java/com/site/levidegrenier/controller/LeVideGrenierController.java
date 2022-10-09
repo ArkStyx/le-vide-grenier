@@ -10,9 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.site.levidegrenier.dto.filtre.AnnonceFiltreAnimaux;
-import com.site.levidegrenier.dto.filtre.AnnonceFiltreImmobilier;
 import com.site.levidegrenier.dto.filtre.AnnonceFiltreMaison;
 import com.site.levidegrenier.dto.filtre.AnnonceFiltreVehicule;
+import com.site.levidegrenier.dto.filtre.Immobilier.AnnonceFiltreImmobilier;
 import com.site.levidegrenier.utilities.UtilitaireFiltre;
 
 @Controller

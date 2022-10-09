@@ -19,4 +19,28 @@ public class AnnonceFiltreMaison extends AnnonceFiltreCommun {
 	private Set<String> listeColoris;
 	private Set<String> listeEtat;
 	private boolean siAnnonceDisponible;
+	
+	
+	/*
+	FIXME CLASSE A MODIFIER
+	
+	TODO A CREER - Sous-Filtre Maison.Ameublement :
+		-	Voir les annonces avec livraison également
+		-	Produit (Accessoire, Armoire, Bar, Bain & baignoire, …)
+		-	Matière (Acier, Bois, Bois massif, Bronze, …)
+		-	Couleur (Argenté, Beige, Blanc, Bleu, …)
+		-	État
+		-	TODO - A INTEGRER : Dons uniquement
+
+	TODO A CREER - Sous-Filtre	Maison.Electromenager :
+			-	TODO - A INTEGRER : Type (Cuisine, Maison et entretien, Beauté / Soin de la personne)
+			-	TODO - A INTEGRER : Produit (Appareil de massage, Brosse à dent électrique, Brosse coiffante, Epilateur, …)
+			-	État
+	
+	TODO A CREER - Sous-Filtre	Maison.Arts De La Table :
+			-	Produit (Assiette, Beurrier, Bocaux et pots, Boite de conservation et boite en métal, …)
+			-	Matière (Acrylique, Alu, Argenterie, Bambou, …)
+			-	Couleur (Argenté, Beige, Blanc, Bleu, …)
+			-	État
+	*/
 }
