@@ -6,6 +6,8 @@ Todo List :
 Annonces :
 -	1.1 Categorie
 -	1.1 Sous-Categorie
+	====>	TODO	-	implique des filtres differents !!!! Créer plusieurs cas de sous-catégorie et impacter les filtres en conséquences
+	
 -	1.1 Filtre :
 	-	Prix Minimum
 	-	Prix Maximum
