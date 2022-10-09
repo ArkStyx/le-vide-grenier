@@ -1,0 +1,78 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Annonces :
+-	1.1 Categorie
+-	1.1 Sous-Categorie
+	====>	TODO	-	implique des filtres differents !!!! Créer plusieurs cas de sous-catégorie et impacter les filtres en conséquences
+	====>	Maison :
+	====>		-	Ameublement
+	
+-	1.1 Filtre :
+	-	Prix Minimum
+	-	Prix Maximum
+	-	Type d’annonces (Offre/Demande)
+	-	Type de vendeurs (Particuliers/Professionnels)
+	-	Annonces urgentes (Oui/Non)
+
+	-	Sous-Filtre Immobilier :
+		-	Type de bien
+		-	Type de vente
+		-	Surface habitable Minimum
+		-	Surface habitable Maximum
+		-	Surface du terrain Minimum
+		-	Surface du terrain Maximum
+		-	Nombre de Pièces
+		-	Classe énergie
+
+	-	Sous-Filtre Maison :
+		-	Voir les annonces avec livraison également
+		-	Produit
+		-	Matière
+		-	Couleur
+		-	État
+
+	-	Sous-Filtre Animal	
+		-	Chiens
+		-	Chats
+		-	Autres Animaux
+		-	Accessoires
+		
+-	0.N photos
+-	1.1 ville
+-	1.1 localisation GPS (comment faire ça ????)
+-	1.1 vendeur
+
+-------------------------
+-------------------------
+
+TODO A RECOUPER AVEC LE FILTRE GLOBAL ET LE MODIFIER EN CONSEQUENCE
+
+TODO A CREER - Sous-Filtre Maison.Ameublement :
+		-	Voir les annonces avec livraison également
+		-	Produit (Accessoire, Armoire, Bar, Bain & baignoire, …)
+		-	Matière (Acier, Bois, Bois massif, Bronze, …)
+		-	Couleur (Argenté, Beige, Blanc, Bleu, …)
+		-	État
+		-	TODO - A INTEGRER : Dons uniquement
+
+TODO A CREER - Sous-Filtre	Maison.Electromenager :
+		-	TODO - A INTEGRER : Type (Cuisine, Maison et entretien, Beauté / Soin de la personne)
+		-	TODO - A INTEGRER : Produit (Appareil de massage, Brosse à dent électrique, Brosse coiffante, Epilateur, …)
+		-	État
+
+TODO A CREER - Sous-Filtre	Maison.Arts De La Table :
+		-	Produit (Assiette, Beurrier, Bocaux et pots, Boite de conservation et boite en métal, …)
+		-	Matière (Acrylique, Alu, Argenterie, Bambou, …)
+		-	Couleur (Argenté, Beige, Blanc, Bleu, …)
+		-	État
+
+
+TODO LES MATIERES SONT DIFFERENTES D'UN TYPE PRODUIT A UN AUTRE	====>	ETABLIR LA LISTE EN FONCTION DES ANNONCES RECUPERES VIA SQL
+
+
+
+
+
