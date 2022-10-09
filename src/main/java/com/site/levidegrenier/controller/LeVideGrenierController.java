@@ -108,13 +108,17 @@ public class LeVideGrenierController {
 		
 
 		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.MAISON_TYPE_PRODUIT_ARMOIRE ????
-		Set<String> listeTypeProduit = new LinkedHashSet<>();
-		listeTypeProduit.add(UtilitaireFiltre.MAISON_TYPE_PRODUIT_ARMOIRE);
-		listeTypeProduit.add(UtilitaireFiltre.MAISON_TYPE_PRODUIT_LIT);
+		Set<String> listeType = new LinkedHashSet<>();
+		listeType.add(UtilitaireFiltre.MAISON_PRODUIT_ARMOIRE);
+		listeType.add(UtilitaireFiltre.MAISON_PRODUIT_LIT);
 		
-		Set<String> listeTypeMatiere = new LinkedHashSet<>();
-		listeTypeMatiere.add(UtilitaireFiltre.MAISON_TYPE_MATIERE_BOIS);
-		listeTypeMatiere.add(UtilitaireFiltre.MAISON_TYPE_MATIERE_FER);
+		Set<String> listeProduit = new LinkedHashSet<>();
+		listeProduit.add(UtilitaireFiltre.MAISON_PRODUIT_ARMOIRE);
+		listeProduit.add(UtilitaireFiltre.MAISON_PRODUIT_LIT);
+		
+		Set<String> listeMatiere = new LinkedHashSet<>();
+		listeMatiere.add(UtilitaireFiltre.MAISON_MATIERE_BOIS);
+		listeMatiere.add(UtilitaireFiltre.MAISON_MATIERE_FER);
 		
 		Set<String> listeColoris = new LinkedHashSet<>();
 		listeColoris.add(UtilitaireFiltre.MAISON_COULEUR_BLANC);
@@ -125,8 +129,9 @@ public class LeVideGrenierController {
 		listeEtat.add(UtilitaireFiltre.MAISON_ETAT_BON);
 		
 		annonceFiltreMaison.setSiAfficherAnnonceAvecLivraison(true);
-		annonceFiltreMaison.setListeTypeProduit(listeTypeProduit);
-		annonceFiltreMaison.setListeTypeMatiere(listeTypeMatiere);
+		annonceFiltreMaison.setListeType(listeType);
+		annonceFiltreMaison.setListeProduit(listeProduit);
+		annonceFiltreMaison.setListeMatiere(listeMatiere);
 		annonceFiltreMaison.setListeColoris(listeColoris);
 		annonceFiltreMaison.setListeEtat(listeEtat);
 		annonceFiltreMaison.setSiAnnonceDisponible(true);
