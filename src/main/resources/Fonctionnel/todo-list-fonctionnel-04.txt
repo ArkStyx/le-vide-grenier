@@ -17,7 +17,7 @@ Annonces :
 	-	Type de vendeurs (Particuliers/Professionnels)
 	-	Annonces urgentes (Oui/Non)
 
-	-	Sous-Filtre Immobilier :
+	-	Sous-Filtre Immobilier - Achat :
 		-	Type de bien
 		-	Type de vente
 		-	Surface habitable Minimum
@@ -45,8 +45,8 @@ Annonces :
 -	1.1 localisation GPS (comment faire ça ????)
 -	1.1 vendeur
 
--------------------------
--------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 TODO A RECOUPER AVEC LE FILTRE GLOBAL ET LE MODIFIER EN CONSEQUENCE
 
@@ -69,8 +69,37 @@ TODO A CREER - Sous-Filtre	Maison.Arts De La Table :
 		-	Couleur (Argenté, Beige, Blanc, Bleu, …)
 		-	État
 
+-------------------------
+-------------------------
 
 TODO LES MATIERES SONT DIFFERENTES D'UN TYPE PRODUIT A UN AUTRE	====>	ETABLIR LA LISTE EN FONCTION DES ANNONCES RECUPERES VIA SQL
+
+TODO "Produit" / "Type" ====> "Type" EST UNE CATEGORIE SUPERIEURE A "Produit"
+
+TODO POURQUOI PAS DE COULEUR DANS LA CATEGORIE ELECTROMENAGER ????
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+	-	Sous-Filtre Immobilier - Location :
+		-	Type de bien
+		-	Type de vente
+		-	Surface habitable Minimum
+		-	Surface habitable Maximum
+		-	Surface du terrain Minimum
+		-	Surface du terrain Maximum
+		-	Nombre de Pièces
+		-	Classe énergie
+	-	Prix Minimum	====>	DEVIENT "LOYER" MINIMUM	====>	DE LA COSMETIQUE, GERER VIA LE LIBELLE HTML
+	-	Prix Maximum	====>	DEVIENT "LOYER" MAXIMUM	====>	DE LA COSMETIQUE, GERER VIA LE LIBELLE HTML
+		-	Meublé / Non meublé		=====>	TODO A RAJOUTER DANS UNE CLASSE "Location"	====>	COMMENT APPELER LA CLASSE STANDARD ?
+
+
+
+
+
+
+
 
 
 
