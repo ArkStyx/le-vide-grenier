@@ -8,23 +8,30 @@ TB_UTILISATEUR
 - numero telephone portable
 - email
 - adresse
-- ville
+
+TB_ADRESSE
+
+- id
+- adresse
+- complement_adresse
+- id_ville
 
 TB_VILLE
 
 - id
 - libelle
-- code_postal
+- id_code_postal
 
 TB_CODE POSTAL
 
 - id
 - libelle
-- departement
+- id_departement
 
 TB_DEPARTEMENT
 - id
 - libelle
+- code
 
 --------------------------------------------------
 

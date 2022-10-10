@@ -1,0 +1,46 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Annonces :
+-	1.1 Categorie
+-	1.1 Sous-Categorie
+-	1.1 Filtre parmi :
+	-	Sous-Filtre Immobilier - Achat
+	-	Sous-Filtre Maison
+	-	Sous-Filtre Animal
+	-	Sous-Filtre Vehicule
+-	0.N photos
+-	1.1 ville de vente (différente de la ville du vendeur)
+-	1.1 localisation GPS (comment faire ça ????)
+-	1.1 vendeur (particulier ou professionnel)
+
+-------------------------
+-------------------------
+
+Utilisateur
+-	1.1 nom
+-	1.1 prenom
+-	0.1 numero telephone
+-	0.1 numero telephone portable
+-	1.1 email
+-	1.1 adresse
+-	1.1 ville
+-	0.N annonce
+-	1.1 date inscription
+-	1.1 delai de reponse
+
+Ville
+-	1.1 libelle
+-	1.1 code_postal
+-	1.1 libelle_departement
+-	1.1 code_departement
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-package com.site.levidegrenier.dto.filtre.immobilier;
+package com.site.levidegrenier.dto.filtres.immobilier;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

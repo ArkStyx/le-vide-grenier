@@ -1,6 +1,6 @@
-package com.site.levidegrenier.dto.filtre.animaux;
+package com.site.levidegrenier.dto.filtres.animaux;
 
-import com.site.levidegrenier.dto.filtre.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.filtres.AnnonceFiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
