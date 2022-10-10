@@ -1,18 +1,16 @@
 package com.site.levidegrenier.controller;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.site.levidegrenier.dto.filtre.AnnonceFiltreAnimaux;
-import com.site.levidegrenier.dto.filtre.AnnonceFiltreMaison;
-import com.site.levidegrenier.dto.filtre.AnnonceFiltreVehicule;
-import com.site.levidegrenier.dto.filtre.Immobilier.AnnonceFiltreImmobilier;
+import com.site.levidegrenier.dto.annonce.filtre.animal.AnnonceFiltreAnimaux;
+import com.site.levidegrenier.dto.annonce.filtre.immobilier.AnnonceFiltreImmobilier;
+import com.site.levidegrenier.dto.annonce.filtre.maison.AnnonceFiltreMaison;
+import com.site.levidegrenier.dto.annonce.filtre.vehicule.AnnonceFiltreVehicule;
 import com.site.levidegrenier.utilities.UtilitaireFiltre;
 
 @Controller

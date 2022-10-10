@@ -1,4 +1,4 @@
-package com.site.levidegrenier.dto;
+package com.site.levidegrenier.dto.annonce.filtre;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
