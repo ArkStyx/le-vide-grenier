@@ -1,8 +1,8 @@
-package com.site.levidegrenier.dto.filtre;
+package com.site.levidegrenier.dto.filtre.maison;
 
 import java.util.Set;
 
-import com.site.levidegrenier.dto.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.filtre.AnnonceFiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +19,6 @@ public class AnnonceFiltreMaison extends AnnonceFiltreCommun {
 	private Set<String> listeMatiere;
 	private Set<String> listeColoris;
 	private Set<String> listeEtat;
-	private boolean siAnnonceDisponible;	// FIXME CA SERT A QUOI CONCRETEMENT ????? ===> si achat en cours ou non
+	private boolean siAnnonceDisponible;
 	private boolean siDonUniquement;
 }

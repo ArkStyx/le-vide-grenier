@@ -1,8 +1,8 @@
-package com.site.levidegrenier.dto.filtre.Immobilier;
+package com.site.levidegrenier.dto.filtre.immobilier;
 
 import java.util.Set;
 
-import com.site.levidegrenier.dto.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.filtre.AnnonceFiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -29,16 +29,15 @@ public class UtilitaireFiltre {
 	public static final String IMMOBILIER_TYPE_VENTE_NEUF = "Neuf";
 	public static final String IMMOBILIER_TYPE_VENTE_VIAGER = "Viager";
 	
-	/*
-	-	Meuble de : Cuisine, Salle de Bain, ...
-	-	Electromenager de : Cuisine, Salle de Bain, ...
-	-	Arts De La Table de : Assiette, Rangements, Outils De Cuisine ...
-	*/
 	public static final String MAISON_TYPE_CUISINE = "Cuisine";
-	public static final String MAISON_TYPE_SALON = "Salon";
 	public static final String MAISON_TYPE_CHAMBRE_ADULTE = "Chambre Adulte";
-	public static final String MAISON_TYPE_CHAMBRE_ENFANT = "Chambre Enfant"; 
-	
+	public static final String MAISON_TYPE_CHAMBRE_ENFANT = "Chambre Enfant";
+	public static final String MAISON_TYPE_OUTILS_DE_CUISINE = "Outils De Cuisine";
+	public static final String MAISON_TYPE_PRODUITS_DE_BEAUTE = "Produits De Beauté";
+	public static final String MAISON_TYPE_RANGEMENT = "Rangement";
+	public static final String MAISON_TYPE_SALON = "Salon";
+	public static final String MAISON_TYPE_SALLE_DE_BAIN = "Salle De Bain";
+
 	public static final String MAISON_PRODUIT_ARMOIRE = "Armoire";
 	public static final String MAISON_PRODUIT_LIT = "Lit";
 
