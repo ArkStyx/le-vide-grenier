@@ -7,10 +7,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.site.levidegrenier.dto.filtres.animaux.AnnonceFiltreAnimaux;
-import com.site.levidegrenier.dto.filtres.immobilier.AnnonceFiltreImmobilier;
-import com.site.levidegrenier.dto.filtres.maison.AnnonceFiltreMaison;
-import com.site.levidegrenier.dto.filtres.vehicule.AnnonceFiltreVehicule;
+import com.site.levidegrenier.dto.annonce.filtre.animal.AnnonceFiltreAnimaux;
+import com.site.levidegrenier.dto.annonce.filtre.immobilier.AnnonceFiltreImmobilier;
+import com.site.levidegrenier.dto.annonce.filtre.maison.AnnonceFiltreMaison;
+import com.site.levidegrenier.dto.annonce.filtre.vehicule.AnnonceFiltreVehicule;
 import com.site.levidegrenier.utilities.UtilitaireFiltre;
 
 @Controller

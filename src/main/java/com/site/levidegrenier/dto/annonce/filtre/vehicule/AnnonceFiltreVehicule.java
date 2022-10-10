@@ -1,6 +1,6 @@
-package com.site.levidegrenier.dto.filtres.vehicule;
+package com.site.levidegrenier.dto.annonce.filtre.vehicule;
 
-import com.site.levidegrenier.dto.filtres.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.annonce.filtre.AnnonceFiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

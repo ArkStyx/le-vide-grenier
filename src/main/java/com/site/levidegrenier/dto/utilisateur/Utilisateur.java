@@ -15,7 +15,7 @@ public class Utilisateur {
 	private String numeroTelephonePortable;
 	private String email;
 	private Adresse adresse;
-	private String annonce;
+	private String annonce;						// TODO		=====>		List<Annonce>
 	private String dateInscription;
 	private String delaiReponse;
 }
