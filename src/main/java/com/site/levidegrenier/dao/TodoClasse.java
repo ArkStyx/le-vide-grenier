@@ -13,27 +13,46 @@ public class TodoClasse {
 	- numero telephone portable
 	- email
 	- adresse
+	- date_inscription
+	- delai_reponse
+	- si_particulier
 	
+
 	TB_ADRESSE
 	- id
 	- adresse
 	- complement_adresse
 	- id_ville
-	
+
+
 	TB_VILLE
 	- id
 	- libelle
 	- id_code_postal
+	
 	
 	TB_CODE POSTAL
 	- id
 	- libelle
 	- id_departement
 	
+	
 	TB_DEPARTEMENT
 	- id
 	- libelle
 	- code
+	
+	
+	TB_LOCALISATION_GPS
+	- id
+	- latitude_degres_decimaux
+	- longitude_degres_decimaux
+	- id_annonce
+	
+	
+	TODO RESTE UTILISATEUR
+	TODO ANNONCE
+	TODO FILTRES
 	*/
 	
 	
@@ -42,37 +61,10 @@ public class TodoClasse {
 	
 	
 	/*
-	ADRESSE
-	private String adresse;
-	private String complementAdresse;
-	private Ville ville;
-	
-	LOCALISATION_GPS
-	private String latitudeDegresDecimaux;
-	private String longitudeDegresDecimaux;
-	
 	UTILISATEUR
-	private String nom;
-	private String prenom;
-	private String numeroTelephone;
-	private String numeroTelephonePortable;
-	private String email;
-	private Adresse adresse;
-	private String dateInscription;
-	private String delaiReponse;
-	private boolean siParticulier;
-	private List<Annonce> listeAnnonces;
-	private List<Annonce> listeAnnoncesFavorites;
-	
-	-------------------------
-	-------------------------
-	
-	VILLE
-	private String libelle;
-	private String codePostal;
-	private String libelleDepartement;
-	private String codeDepartement;
-	
+	private List<Annonce> listeAnnonces (Utilisateur);
+	private List<Annonce> listeAnnoncesFavorites (Utilisateur);
+
 	ANNONCE
 	private String categorie;
 	private String sousCategorie;
@@ -81,7 +73,10 @@ public class TodoClasse {
 	private String localisation;
 	private LocalisationGps localisationGps;
 	private Utilisateur utilisateur;
-	
+
+	-------------------------
+	-------------------------
+
 	FILTRE
 	private Integer prixMinimum;
 	private Integer prixMaximum;
