@@ -1,6 +1,8 @@
 package com.site.levidegrenier.dto.annonce;
 
-import java.util.List;
+import java.util.LinkedHashMap;
+
+import org.springframework.web.multipart.MultipartFile;
 
 import com.site.levidegrenier.dto.utilisateur.LocalisationGps;
 import com.site.levidegrenier.dto.utilisateur.Utilisateur;
@@ -16,8 +18,8 @@ public class Annonce {
 
 	private String categorie;
 	private String sousCategorie;
-	private String filtre;						// TODO FILTRE	====> LIE AVEC CATEGORIE ET SOUS-CATEGORIE
-	private List<String> photos;				// TODO LIST<PHOTOS>
+	private String filtre;										// TODO FILTRE	====> LIER AVEC CATEGORIE ET SOUS-CATEGORIE
+	private LinkedHashMap<String, MultipartFile> photos;
 	private String localisation;
 	private LocalisationGps localisationGps;
 	private Utilisateur utilisateur;

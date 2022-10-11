@@ -1,0 +1,38 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+L'appli a :
+- 0.n recherches
+- 0.n Favoris
+- 0.n Messages
+- 1.1 connexion
+
+------------------------------------------------
+------------------------------------------------
+
+un particulier/Une agence a :
+- 0.n annonces
+- 1.1 bouton "envoyer un message"
+- 1.1 bouton "voir le numero"
+- 1.1 statut (pro ou particulier)
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Comment gérer la sécurité et les profils ?
+
+-------------------------
+-------------------------
+
+TODO PHOTOS EN JAVA
+https://www.codejava.net/frameworks/spring-boot/spring-boot-file-upload-tutorial
+
+TODO PHOTOS EN BDD
+https://stackoverflow.com/questions/54500/storing-images-in-postgresql
+https://stackoverflow.com/questions/19748848/best-way-to-store-images-in-postgresql
+
+
+
+
