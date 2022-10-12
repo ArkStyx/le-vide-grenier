@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("le-vide-grenier")
+@RequestMapping("le-vide-grenier-back")
 public class LeVideGrenierController {
 
 	public ResponseEntity<String> coucou() {
