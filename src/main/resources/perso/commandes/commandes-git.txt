@@ -14,8 +14,9 @@
 ### Modifications de fichiers dans le workspace ###
 ###################################################
 
-Vérifier les fichiers modifiés :	"git checkout"
-Ajouter les fichiers modifiés : 	"git add src/main/resources/todo-list.txt"
+Vérifier les fichiers modifiés :		"git checkout"
+Ajouter un fichier modifié : 			"git add src/main/resources/todo-list.txt"
+Ajouter tous les fichiers modifiés :	"git add ."
 
 
 ###########################################################################
