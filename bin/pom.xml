@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.site</groupId>
-	<artifactId>le-vide-grenier</artifactId>
+	<artifactId>le-vide-grenier-back</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>le-vide-grenier</name>
+	<name>le-vide-grenier-back</name>
 	<description>TP Personnel - Mock Le Bon Coin</description>
 	
 	<properties>
