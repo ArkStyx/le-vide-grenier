@@ -1,35 +1,47 @@
 TODO CREER TABLES
 
 TB_UTILISATEUR
-- id
+- utilisateur_id
 - nom
 - prenom
 - numero telephone
 - numero telephone portable
 - email
-- adresse
+- adresse_id
+
+TB_UTILISATEUR_HISTORIQUE
+- utilisateur_historique_id
+- nom
+- prenom
+- numero telephone
+- numero telephone portable
+- email
+- adresse_id
+- date_creation
+- date_modification
+- date_suppression
 
 TB_ADRESSE
 
-- id
+- adresse_id
 - adresse
 - complement_adresse
 - id_ville
 
 TB_VILLE
 
-- id
+- ville_id
 - libelle
 - id_code_postal
 
 TB_CODE POSTAL
 
-- id
+- code_postal_id
 - libelle
 - id_departement
 
 TB_DEPARTEMENT
-- id
+- departement_id
 - libelle
 - code
 
