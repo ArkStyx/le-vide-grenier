@@ -33,6 +33,28 @@ TODO PHOTOS EN BDD
 https://stackoverflow.com/questions/54500/storing-images-in-postgresql
 https://stackoverflow.com/questions/19748848/best-way-to-store-images-in-postgresql
 
+TODO MODIFIER LE MOT DE PASSE
+https://security.stackexchange.com/questions/234060/what-is-the-suggested-best-practice-for-changing-a-users-email-address
+
+
+https://cloud.google.com/blog/products/identity-security/account-authentication-and-password-management-best-practices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
