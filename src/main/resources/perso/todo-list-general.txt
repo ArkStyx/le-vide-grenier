@@ -77,7 +77,7 @@ https://stackoverflow.com/questions/20467179/git-push-rejected-non-fast-forward
 https://stackoverflow.com/questions/61753783/impossible-to-merge-branch-refusing-to-merge-unrelated-histories
 https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n
 
-
+https://stackoverflow.com/questions/56977559/merge-develop-into-master
 
 https://www.codejava.net/frameworks/spring-boot/connect-to-postgresql-database-examples
 
