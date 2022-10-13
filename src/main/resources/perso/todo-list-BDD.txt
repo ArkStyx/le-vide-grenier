@@ -9,7 +9,7 @@ TB_UTILISATEUR
 -	email
 -	adresse_id
 
-TB_UTILISATEUR_HISTORIQUE
+TB_UTILISATEUR_HISTORIQUE			====>	TODO - CREER LA CLASSE JAVA
 -	utilisateur_historique_id
 -	nom
 -	prenom
@@ -49,9 +49,29 @@ TB_ANNONCE
 -	annonce_id
 -	categorie
 -	sous_categorie
--	filtre_id
--	localisation_id;
+-	localisation_id
 -	utilisateur_id
+-	prix
+-	si_offre
+-	si_annonce_urgente
+-	si_vendeur_particulier
+
+TB_ANNONCE_HISTORIQUE			====>	TODO - CREER LA CLASSE JAVA
+-	annonce_id
+-	categorie
+-	sous_categorie
+-	filtre_id
+-	localisation_id
+-	utilisateur_id
+-	prix
+-	si_offre
+-	si_annonce_urgente
+-	si_vendeur_particulier
+-	date_creation
+-	date_modification
+-	date_suppression
+
+
 
 TB_PHOTO
 -	photo_id
@@ -69,19 +89,18 @@ TB_LOCALISATION
 
 
 
-TB_FILTRE
--	filtre_id
--	prix;
--	si_offre;
--	si_annonceurgente;
--	si_vendeur_particulier;
 
 TB_FILTRE_MAISON
 -	filtre_maison_id
 -	si_annonce_avec_livraison;
 -	si_disponible;
 -	si_don;
--	filtre_id
+-	annonce_id
+
+TB_FILTRE_ANIMAL
+-	filtre_animal_id
+-	type_animal
+-	annonce_id
 
 TB_FILTRE_IMMOBILIER
 -	filtre_immobilier_id
@@ -90,18 +109,16 @@ TB_FILTRE_IMMOBILIER
 -	surface_Habitable;
 -	surface_Terrain;
 -	nombre_De_Pieces;
--	classe_energie_id;
--	gaz_effet_serre_id;
--	filtre_id
+-	classe_energie;
+-	gaz_effet_serre;
+-	annonce_id
 
 TB_FILTRE_LOCATION
 -	filtre_immobilier_id
 -	si_meublee;
 
-TB_FILTRE_ANIMAL
--	filtre_animal_id
--	type_animal
--	filtre_id
+
+
 
 TB_TYPE
 -	type_id;
@@ -131,17 +148,17 @@ TB_TYPE_VENTE_IMMOBILIERE
 -	type_vente_immobiliere_id
 -	libelle
 
-TB_CLASSE_ENERGIE
--	classe_energie_id
--	libelle
 
-TB_GAZ_EFFET_SERRE
--	gaz_effet_serre_id
--	libelle
+
+
 
 
 CATEGORIES D'ANNONCE SEULEMENT UTILE COTE SQL ====> COTE JAVA ON UTILISE LES CLASSES
 
+
+
+
+TODO - POUR QUELLES CLASSES DOIT-ON CREER DES HISTORIQUES ????
 
 
 
