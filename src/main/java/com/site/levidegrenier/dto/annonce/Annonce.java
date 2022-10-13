@@ -17,10 +17,9 @@ import lombok.Setter;
 public class Annonce {
 
 	private String categorie;
-	private String sousCategorie;
-	private String filtre;										// TODO FILTRE	====> LIER AVEC CATEGORIE ET SOUS-CATEGORIE
+	private String sousCategorie;							// TODO Maison.Ameublement / Maison.Electromenager / Maison.Arts De La Table
+	private String filtre;									// TODO FILTRE	====> LIER AVEC CATEGORIE ET SOUS-CATEGORIE
 	private LinkedHashMap<String, MultipartFile> photos;
-	private String localisation;
 	private LocalisationGps localisationGps;
 	private Utilisateur utilisateur;
 }

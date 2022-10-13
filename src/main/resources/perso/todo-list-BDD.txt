@@ -1,57 +1,143 @@
 TODO CREER TABLES
 
 TB_UTILISATEUR
-- utilisateur_id
-- nom
-- prenom
-- numero telephone
-- numero telephone portable
-- email
-- adresse_id
+-	utilisateur_id
+-	nom
+-	prenom
+-	numero telephone
+-	numero telephone portable
+-	email
+-	adresse_id
 
 TB_UTILISATEUR_HISTORIQUE
-- utilisateur_historique_id
-- nom
-- prenom
-- numero telephone
-- numero telephone portable
-- email
-- adresse_id
-- date_creation
-- date_modification
-- date_suppression
+-	utilisateur_historique_id
+-	nom
+-	prenom
+-	numero telephone
+-	numero telephone portable
+-	email
+-	adresse_id
+-	date_creation
+-	date_modification
+-	date_suppression
 
 TB_ADRESSE
-
-- adresse_id
-- adresse
-- complement_adresse
-- id_ville
+-	adresse_id
+-	adresse
+-	complement_adresse
+-	ville_id
 
 TB_VILLE
-
-- ville_id
-- libelle
-- id_code_postal
+-	ville_id
+-	libelle
+-	code_postal_id
 
 TB_CODE POSTAL
-
-- code_postal_id
-- libelle
-- id_departement
+-	code_postal_id
+-	libelle
+-	departement_id
 
 TB_DEPARTEMENT
-- departement_id
-- libelle
-- code
+-	departement_id
+-	libelle
+-	code
+
 
 --------------------------------------------------
 
-TB_ANNONCES (RECUPERER FICHIER SUR LES AUTRES SUR LA CLE USB)
+TB_ANNONCE
+-	annonce_id
+-	categorie
+-	sous_categorie
+-	filtre_id
+-	localisation_id;
+-	utilisateur_id
+
+TB_PHOTO
+-	photo_id
+-	annonce_id
+-	photo				====>	BLOB
+-	ordre_affichage
+
+TB_LOCALISATION
+-	localisation_id
+-	ville_id
+-	code_postal_id
+-	adresse_precise
+-	latitude_degres_decimaux;
+-	longitude_degres_decimaux;
 
 
 
+TB_FILTRE
+-	filtre_id
+-	prix;
+-	si_offre;
+-	si_annonceurgente;
+-	si_vendeur_particulier;
 
+TB_FILTRE_MAISON
+-	filtre_maison_id
+-	si_annonce_avec_livraison;
+-	si_disponible;
+-	si_don;
+-	filtre_id
+
+TB_FILTRE_IMMOBILIER
+-	filtre_immobilier_id
+-	type_bien_immobilier_id;
+-	type_vente_immobiliere_id;
+-	surface_Habitable;
+-	surface_Terrain;
+-	nombre_De_Pieces;
+-	classe_energie_id;
+-	gaz_effet_serre_id;
+-	filtre_id
+
+TB_FILTRE_LOCATION
+-	filtre_immobilier_id
+-	si_meublee;
+
+TB_FILTRE_ANIMAL
+-	filtre_animal_id
+-	type_animal
+-	filtre_id
+
+TB_TYPE
+-	type_id;
+-	libelle;
+-	filtre_maison_id;
+
+TB_PRODUIT
+-	produit_id;
+-	libelle;
+-	filtre_maison_id;
+
+TB_MATIERE
+-	matiere_id;
+-	libelle;
+-	filtre_maison_id;
+
+TB_COLORI
+-	colori_id;
+-	libelle;
+-	filtre_maison_id;
+
+TB_TYPE_BIEN_IMMOBILIER
+-	type_bien_immobilier_id
+-	libelle
+
+TB_TYPE_VENTE_IMMOBILIERE
+-	type_vente_immobiliere_id
+-	libelle
+
+TB_CLASSE_ENERGIE
+-	classe_energie_id
+-	libelle
+
+TB_GAZ_EFFET_SERRE
+-	gaz_effet_serre_id
+-	libelle
 
 
 CATEGORIES D'ANNONCE SEULEMENT UTILE COTE SQL ====> COTE JAVA ON UTILISE LES CLASSES

@@ -9,6 +9,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class LocalisationGps {
 
+	private Ville ville;
+	private Adresse adressePrecise;
 	private String latitudeDegresDecimaux;
 	private String longitudeDegresDecimaux;
 }
