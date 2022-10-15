@@ -40,14 +40,14 @@ public class ClasseTemporaire {
 		
 		
 		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_MAISON ????
-		Set<String> listeTypeBien = new LinkedHashSet<>();
-		listeTypeBien.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_MAISON);
-		listeTypeBien.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_TERRAIN);
+		Set<String> listeTypeBienImmobilier = new LinkedHashSet<>();
+		listeTypeBienImmobilier.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_MAISON);
+		listeTypeBienImmobilier.add(UtilitaireFiltre.IMMOBILIER_TYPE_BIEN_TERRAIN);
 		
 		// TODO FAIRE UNE CLASSE SPECIFIQUE : UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN ????
-		Set<String> listeTypeVente = new LinkedHashSet<>();
-		listeTypeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN);
-		listeTypeVente.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_NEUF);
+		Set<String> listeTypeVenteImmobiliere = new LinkedHashSet<>();
+		listeTypeVenteImmobiliere.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN);
+		listeTypeVenteImmobiliere.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_NEUF);
 
 		AnnonceFiltreImmobilier annonceFiltreImmobilier = new AnnonceFiltreImmobilier();
 		annonceFiltreImmobilier.setPrixMinimum(null);
@@ -62,8 +62,8 @@ public class ClasseTemporaire {
 		annonceFiltreImmobilier.setSurfaceHabitableMaximum(null);
 		annonceFiltreImmobilier.setSurfaceTerrainMinimum(4000);
 		annonceFiltreImmobilier.setSurfaceTerrainMaximum(null);
-		annonceFiltreImmobilier.setListeTypeBien(listeTypeBien);
-		annonceFiltreImmobilier.setListeTypeVente(listeTypeVente);
+		annonceFiltreImmobilier.setListeTypeBienImmobilier(listeTypeBienImmobilier);
+		annonceFiltreImmobilier.setListeTypeVenteImmobiliere(listeTypeVenteImmobiliere);
 	}
 	
 	// TODO A SUPPRIMER - METHODE DE TEST
