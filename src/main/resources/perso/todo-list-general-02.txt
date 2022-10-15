@@ -1,0 +1,62 @@
+Todo List :
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+00) LOGICIELS
+- Installer Lombok									====>	OK
+- Installer Git										====>	OK
+- Installer GitHub									====>	OK
+- Installer PostGreSQL								====>	OK
+- Installer PgAdmin									====>	OK
+- Installer Liquibase								====>	OK
+--->	https://github.com/liquibase/liquibase/releases/tag/v4.17.0
+
+
+01) DEPLOYER LE PROJET SUR GITHUB					====>	OK
+
+
+02) BDD												====>	DOING
+02.a)	Réfléchir au schéma de données
+
+
+03) BACK											====>	DOING
+03.a)	Controller										-->		DOING
+03.b)	Service											-->		DOING
+03.c)	Dao												-->		TODO
+03.d)	Security										-->		TODO
+03.e)	AOP												-->		TODO
+03.f)	Classes :										-->		DOING
+-->	Classes de filtres
+---->	Classe mere filtre
+---->	Classes variees suivant les types d'achat
+-->	Classes utilisateur
+--> Classes catégories
+----->	Classes sous-categories (meme classe ?)
+03.g)	Lier Liquibase au back							-->		TODO VERIFY
+03.h)	Lier Postgre au back via Spring					-->		TODO
+03.i)	TDD (Test Driven Develomment) 					-->		TODO !!!!!
+
+
+04) FRONT											====>	TODO
+04.a)	React pour apprendre une nouvelle techno
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+A LIRE
+
+https://www.edureka.co/blog/git-commands-with-example/
+https://stackoverflow.com/questions/20467179/git-push-rejected-non-fast-forward
+https://stackoverflow.com/questions/61753783/impossible-to-merge-branch-refusing-to-merge-unrelated-histories
+https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n
+
+
+TOD A LIRE ET RELIRE ?
+https://stackoverflow.com/questions/56977559/merge-develop-into-master
+
+https://www.codejava.net/frameworks/spring-boot/connect-to-postgresql-database-examples
+
+
