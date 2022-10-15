@@ -34,7 +34,7 @@ Todo List :
 --> Classes catégories
 ----->	Classes sous-categories (meme classe ?)
 03.g)	Lier Liquibase au back							-->		TODO VERIFY
-03.h)	Lier Postgre au back via Spring					-->		TODO
+03.h)	Lier PostgreSQL au back via Spring				-->		TODO
 03.i)	TDD (Test Driven Develomment) 					-->		TODO !!!!!
 
 
