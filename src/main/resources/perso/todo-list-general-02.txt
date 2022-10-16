@@ -60,3 +60,9 @@ https://stackoverflow.com/questions/56977559/merge-develop-into-master
 https://www.codejava.net/frameworks/spring-boot/connect-to-postgresql-database-examples
 
 
+ECLIPSE - AFFICHER LES TODO VIA WORKING SET
+https://stackoverflow.com/questions/3004074/eclipse-tasks-from-specific-files
+
+
+
+
