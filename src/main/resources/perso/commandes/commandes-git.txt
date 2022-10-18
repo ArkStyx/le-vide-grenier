@@ -31,7 +31,7 @@ Ajouter tous les fichiers modifiés :	"git add ."
 
 TODO COMPRENDRE CE QUE CA FAIT EXACTEMENT
 01.XXX) Dans gitbash faire commande suivante - ??? :					git remote add origin https://github.com/ArkStyx/le-vide-grenier.git
-01.XXX) Dans gitbash faire commande suivante - ??? :								"git fetch"
-01.XXX) Dans gitbash faire commande suivante - ??? :								"git rebase origin/master"
+01.XXX) Dans gitbash faire commande suivante - ??? :					"git fetch"
+01.XXX) Dans gitbash faire commande suivante - ??? :					"git rebase origin/master"
 
 

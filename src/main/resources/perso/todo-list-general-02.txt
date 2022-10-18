@@ -59,21 +59,60 @@ https://stackoverflow.com/questions/56977559/merge-develop-into-master
 
 https://www.codejava.net/frameworks/spring-boot/connect-to-postgresql-database-examples
 
+-------------------------
+-------------------------
 
 ECLIPSE - AFFICHER LES TODO VIA WORKING SET
 https://stackoverflow.com/questions/3004074/eclipse-tasks-from-specific-files
+
+-------------------------
+-------------------------
 
 BON RAPPEL BDD
 https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/
 https://softwareengineering.stackexchange.com/questions/225903/when-should-a-database-table-use-timestamps
 https://dba.stackexchange.com/questions/168590/not-using-foreign-key-constraints-in-real-practice-is-it-ok
 
+-------------------------
+-------------------------
 
 LIRE UN FICHIER SQL DANS ECLIPSE :
 https://stackoverflow.com/questions/57815240/is-there-a-way-to-open-the-simple-sql-editor-in-eclipse-by-default
 
+-------------------------
+-------------------------
+
 POSTGRESQL - SERIAL
 https://supabase.com/blog/choosing-a-postgres-primary-key
+
+-------------------------
+-------------------------
+
+LATIDUE / LONGITUDE
+https://stackoverflow.com/questions/1196415/what-datatype-to-use-when-storing-latitude-and-longitude-data-in-sql-databases
+
+For latitudes use: Decimal(8,6), and longitudes use: Decimal(9,6)
+If you're not used to precision and scale parameters, here's a format string visual:
+Latitude and Longitude ##.###### and ###.######
+To 6 decimal places should get you to around ~10cm of accuracy on a coordinate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
