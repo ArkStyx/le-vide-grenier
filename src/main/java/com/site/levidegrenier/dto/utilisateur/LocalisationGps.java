@@ -13,4 +13,13 @@ public class LocalisationGps {
 	private Adresse adressePrecise;
 	private String latitudeDegresDecimaux;
 	private String longitudeDegresDecimaux;
+	
+	
+	/*
+	TODO EXEMPLE
+	
+	9 Rue Jules Ferry
+	35300 Fougères
+	48.353019, -1.200560
+	 */
 }

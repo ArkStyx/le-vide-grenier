@@ -43,101 +43,49 @@ TB_DEPARTEMENT
 -	code
 
 
---------------------------------------------------
-
-TB_ANNONCE
--	annonce_id
--	categorie
--	sous_categorie
--	localisation_id
--	utilisateur_id
--	prix
--	si_offre
--	si_annonce_urgente
--	si_vendeur_particulier
-
-TB_ANNONCE_HISTORIQUE			====>	TODO - CREER LA CLASSE JAVA
--	annonce_id
--	categorie
--	sous_categorie
--	filtre_id
--	localisation_id
--	utilisateur_id
--	prix
--	si_offre
--	si_annonce_urgente
--	si_vendeur_particulier
--	date_creation
--	date_modification
--	date_suppression
-
-
-
-TB_PHOTO
--	photo_id
--	annonce_id
--	photo				====>	BLOB
--	ordre_affichage
-
-TB_LOCALISATION
--	localisation_id
--	ville_id
--	code_postal_id
--	adresse_precise
--	latitude_degres_decimaux;
--	longitude_degres_decimaux;
-
-
-
-
-TB_FILTRE_MAISON
--	filtre_maison_id
--	si_annonce_avec_livraison;
--	si_disponible;
--	si_don;
--	annonce_id
-
-TB_FILTRE_ANIMAL
--	filtre_animal_id
--	type_animal
--	annonce_id
-
-TB_FILTRE_IMMOBILIER
--	filtre_immobilier_id
--	type_bien_immobilier_id;
--	type_vente_immobiliere_id;
--	surface_Habitable;
--	surface_Terrain;
--	nombre_De_Pieces;
--	classe_energie;
--	gaz_effet_serre;
--	annonce_id
-
-TB_FILTRE_LOCATION
--	filtre_immobilier_id
--	si_meublee;
-
-
-
-
-
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-TODO tb_filtre_maison
-TODO tb_filtre_animal
-TODO tb_filtre_immobilier
-TODO tb_filtre_location
-
--------------------------
--------------------------
-
-TODO SEQUENCES
+TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
+TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
+TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
+TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
+TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
 
 
+CREATE TABLE tb_annonce (
+	annonce_id								SERIAL PRIMARY KEY,
+	categorie								VARCHAR(250),
+	sous_categorie							VARCHAR(250),
+	localisation_id							NUMERIC(15,0),
+	utilisateur_id							NUMERIC(15,0),
+	prix									NUMERIC(15,0),
+	si_offre								BOOLEAN,
+	si_annonce_urgente						BOOLEAN,
+	si_vendeur_particulier					BOOLEAN,
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL,
+	FOREIGN KEY (localisation_id)			REFERENCES tb_localisation (localisation_id),
+	FOREIGN KEY (utilisateur_id)			REFERENCES tb_utilisateur (utilisateur_id)
+)
 
-
-
+CREATE TABLE tb_annonce_historique (
+	annonce_historique_id					SERIAL PRIMARY KEY,
+	categorie								VARCHAR(250),
+	sous_categorie							VARCHAR(250),
+	localisation_id							NUMERIC(15,0),
+	utilisateur_id							NUMERIC(15,0),
+	prix									NUMERIC(15,0),
+	si_offre								BOOLEAN,
+	si_annonce_urgente						BOOLEAN,
+	si_vendeur_particulier					BOOLEAN,
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL,
+	FOREIGN KEY (localisation_id)			REFERENCES tb_localisation (localisation_id),
+	FOREIGN KEY (utilisateur_id)			REFERENCES tb_utilisateur (utilisateur_id)
+)
 
 
