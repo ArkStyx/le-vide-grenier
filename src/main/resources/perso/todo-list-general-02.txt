@@ -96,10 +96,11 @@ If you're not used to precision and scale parameters, here's a format string vis
 Latitude and Longitude ##.###### and ###.######
 To 6 decimal places should get you to around ~10cm of accuracy on a coordinate.
 
+-------------------------
+-------------------------
 
-
-
-
+SPRING DATA - GENERATE SQL
+https://www.baeldung.com/spring-data-jpa-generate-db-schema
 
 
 
