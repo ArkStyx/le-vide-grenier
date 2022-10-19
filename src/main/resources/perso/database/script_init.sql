@@ -1,10 +1,59 @@
 
 
 
+CREATE TABLE tb_utilisateur (
+	utilisateur_id							SERIAL PRIMARY KEY,
+	nom										VARCHAR(50) NOT NULL,
+	prenom									VARCHAR(50) NOT NULL,
+	numero telephone						VARCHAR(15),
+	numero telephone portable				VARCHAR(15),
+	email									VARCHAR(250) NOT NULL
+	adresse_id								NUMERIC(15,0),
+	FOREIGN KEY (adresse_id)				REFERENCE tb_adresse (adresse_id)
+)
 
+CREATE TABLE tb_utilisateur_historique (
+	utilisateur_historique_id				SERIAL PRIMARY KEY,
+	nom										VARCHAR(50) NOT NULL,
+	prenom									VARCHAR(50) NOT NULL,
+	numero telephone						VARCHAR(15),
+	numero telephone portable				VARCHAR(15),
+	email									VARCHAR(250) NOT NULL
+	adresse_id								NUMERIC(15,0),
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL,
+	FOREIGN KEY (adresse_id)				REFERENCE tb_adresse (adresse_id)
+)
 
+CREATE TABLE tb_adresse (
+	adresse_id								SERIAL PRIMARY KEY,
+	adresse									VARCHAR(250) NOT NULL,
+	complement_adresse						VARCHAR(250) NOT NULL,
+	ville_id								NUMERIC(15,0) NOT NULL,
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL,
+	FOREIGN KEY (ville_id)					REFERENCE tb_ville (ville_id)
+)
 
+CREATE TABLE tb_ville (
+	ville_id								SERIAL PRIMARY KEY,
+	libelle									VARCHAR(250) NOT NULL,
+	code_postal								VARCHAR(5) NOT NULL,
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL
+)
 
+CREATE TABLE tb_departement (
+	departement_id							SERIAL PRIMARY KEY,
+	libelle									VARCHAR(250) NOT NULL,
+	code									VARCHAR(2) NOT NULL,
+	creation								TIMESTAMP NOT NULL,
+	modification							TIMESTAMP NOT NULL,
+	suppression								TIMESTAMP NOT NULL
+)
 
 CREATE TABLE tb_annonce (
 	annonce_id								SERIAL PRIMARY KEY,

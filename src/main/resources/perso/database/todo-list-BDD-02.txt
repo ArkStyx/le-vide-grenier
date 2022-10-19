@@ -1,91 +1,25 @@
 TODO CREER TABLES
 
-TB_UTILISATEUR
--	utilisateur_id
--	nom
--	prenom
--	numero telephone
--	numero telephone portable
--	email
--	adresse_id
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
-TB_UTILISATEUR_HISTORIQUE			====>	TODO - CREER LA CLASSE JAVA
--	utilisateur_historique_id
--	nom
--	prenom
--	numero telephone
--	numero telephone portable
--	email
--	adresse_id
--	date_creation
--	date_modification
--	date_suppression
-
-TB_ADRESSE
--	adresse_id
--	adresse
--	complement_adresse
--	ville_id
-
-TB_VILLE
--	ville_id
--	libelle
--	code_postal_id
-
-TB_CODE POSTAL
--	code_postal_id
--	libelle
--	departement_id
-
-TB_DEPARTEMENT
--	departement_id
--	libelle
--	code
-
-
+TODO HISTORIQUE SUR QUELLES TABLES ?
+TODO HISTORIQUE SUR QUELLES TABLES ?
+TODO HISTORIQUE SUR QUELLES TABLES ?
+TODO HISTORIQUE SUR QUELLES TABLES ?
+TODO HISTORIQUE SUR QUELLES TABLES ?
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
-TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
-TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
-TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
-TODO HISTORIQUE SUR LES DIFFERENTES FILTRES ?????
 
 
-CREATE TABLE tb_annonce (
-	annonce_id								SERIAL PRIMARY KEY,
-	categorie								VARCHAR(250),
-	sous_categorie							VARCHAR(250),
-	localisation_id							NUMERIC(15,0),
-	utilisateur_id							NUMERIC(15,0),
-	prix									NUMERIC(15,0),
-	si_offre								BOOLEAN,
-	si_annonce_urgente						BOOLEAN,
-	si_vendeur_particulier					BOOLEAN,
-	creation								TIMESTAMP NOT NULL,
-	modification							TIMESTAMP NOT NULL,
-	suppression								TIMESTAMP NOT NULL,
-	FOREIGN KEY (localisation_id)			REFERENCES tb_localisation (localisation_id),
-	FOREIGN KEY (utilisateur_id)			REFERENCES tb_utilisateur (utilisateur_id)
-)
 
-CREATE TABLE tb_annonce_historique (
-	annonce_historique_id					SERIAL PRIMARY KEY,
-	categorie								VARCHAR(250),
-	sous_categorie							VARCHAR(250),
-	localisation_id							NUMERIC(15,0),
-	utilisateur_id							NUMERIC(15,0),
-	prix									NUMERIC(15,0),
-	si_offre								BOOLEAN,
-	si_annonce_urgente						BOOLEAN,
-	si_vendeur_particulier					BOOLEAN,
-	creation								TIMESTAMP NOT NULL,
-	modification							TIMESTAMP NOT NULL,
-	suppression								TIMESTAMP NOT NULL,
-	FOREIGN KEY (localisation_id)			REFERENCES tb_localisation (localisation_id),
-	FOREIGN KEY (utilisateur_id)			REFERENCES tb_utilisateur (utilisateur_id)
-)
+
+
+
+
+
+
 
 
