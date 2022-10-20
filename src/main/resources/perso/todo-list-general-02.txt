@@ -102,11 +102,11 @@ To 6 decimal places should get you to around ~10cm of accuracy on a coordinate.
 SPRING DATA - GENERATE SQL
 https://www.baeldung.com/spring-data-jpa-generate-db-schema
 
+SQL vs NoSQL
+https://stackoverflow.com/questions/2559411/sql-mysql-vs-nosql-couchdb
 
-
-
-
-
+POSTGRESQL (14 & 15) - CONTRAINTE UNIQUE NULL
+https://stackoverflow.com/questions/20154033/allow-null-in-unique-column
 
 
 

@@ -1,0 +1,20 @@
+CHERCHER GITHUB MEJDI : mbouzouita@gmail.com
+
+---------------------------------------------------------------------------------------------------------
+-----												SQL												-----
+---------------------------------------------------------------------------------------------------------
+
+METHODE MEJDI POUR HIERARCHISER DES CATEGORIES, DES EMPLOYES
+tb_categorie	====> categorie_id, dependance_categorie
+
+Exemple :
+-- 1, null
+-- 2, null
+-- 3, 1
+-- 4, 1-3
+-- 5, 1-3-4
+	
+Explication				:	ligne 5 depend de ligne 4, qui depend de ligne 3, qui depend de ligne 1
+Pour rechercher en BDD	:	LIKE '%-3-%'
+
+

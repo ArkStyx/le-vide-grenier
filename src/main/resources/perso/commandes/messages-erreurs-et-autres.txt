@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------------
+-----												SQL												-----
+---------------------------------------------------------------------------------------------------------
+
+POSTGRESQL 14.5.1 :
+PROBLEME : Appuyer sur "Tools > PSQL Tool", le message d'erreur est le suivant : "Please configure the PostgreSQL Binary Path in the Preferences dialog"
+SOLUTION : https://dba.stackexchange.com/questions/149169/binary-path-in-the-pgadmin-preferences
+Aller sur "Preferences > Path > Binary Paths" et saisir un chemin dans "PostgreSQL Binary Path". Exemple "C:\Program Files\PostgreSQL\9.6\bin"
+
+POSTGRESQL 14.5.1 : 
+PROBLEME : Lors de la création des tables, on a le message d'erreur "Create table relation does not exist"
+SOLUTION : "In PostgreSQL, a relation does not exist error happens when you reference a table name that can't be found in the database you currently connect to"
+Changer l'ordre de création des différentes tables
+
+
+
+
+
+
+

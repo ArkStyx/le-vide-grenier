@@ -1,6 +1,6 @@
-###########################################################################
-### Configurations globales ###
-###############################
+---------------------------------------------------------------------------------------------------------
+-----										Configurations globales									-----
+---------------------------------------------------------------------------------------------------------
 
 - ajouter son mail utilisateur :	"git config --global user.email" [EMAIL_UTILISATEUR]
 - ajouter son nom utilisateur : 	"git config --global user.name" [NOM_UTILISATEUR]
@@ -10,18 +10,18 @@
 
 
 
-###########################################################################
-### Modifications de fichiers dans le workspace ###
-###################################################
+---------------------------------------------------------------------------------------------------------
+-----							Modifications de fichiers dans le workspace							-----
+---------------------------------------------------------------------------------------------------------
 
 Vérifier les fichiers modifiés :		"git checkout"
 Ajouter un fichier modifié : 			"git add src/main/resources/todo-list.txt"
 Ajouter tous les fichiers modifiés :	"git add ."
 
 
-###########################################################################
-### Envoies de fichiers sur le repository ###
-#############################################
+---------------------------------------------------------------------------------------------------------
+-----								Envoies de fichiers sur le repository							-----
+---------------------------------------------------------------------------------------------------------
 
 - verifier nom et adresse distante du repository :	"git remote -v"
 - pousser sur la branche distante "origin" :		"git push origin main" (ou "master")
