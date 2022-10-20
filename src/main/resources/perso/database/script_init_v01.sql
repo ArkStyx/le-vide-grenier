@@ -220,3 +220,4 @@ CREATE TABLE tb_type_vente_immobiliere (
 	modification					TIMESTAMP NOT NULL,
 	suppression						TIMESTAMP NOT NULL
 )
+
