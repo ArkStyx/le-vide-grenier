@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS lvg.tb_utilisateur CASCADE;
 DROP TABLE IF EXISTS lvg.tb_utilisateur_historique CASCADE;
 DROP TABLE IF EXISTS lvg.tb_categorie CASCADE;
-DROP TABLE IF EXISTS lvg.tb_localisation CASCADE;
+DROP TABLE IF EXISTS lvg.tb_localisation_gps CASCADE;
 DROP TABLE IF EXISTS lvg.tb_annonce CASCADE;
 DROP TABLE IF EXISTS lvg.tb_annonce_historique CASCADE;
 DROP TABLE IF EXISTS lvg.tb_photo CASCADE;
