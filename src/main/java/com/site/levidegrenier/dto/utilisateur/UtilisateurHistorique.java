@@ -3,6 +3,7 @@ package com.site.levidegrenier.dto.utilisateur;
 import java.util.List;
 
 import com.site.levidegrenier.dto.annonce.Annonce;
+import com.site.levidegrenier.utilities.UtilitaireHistorique;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Utilisateur {
+public class UtilisateurHistorique extends UtilitaireHistorique {
 
 	private String nom;
 	private String prenom;

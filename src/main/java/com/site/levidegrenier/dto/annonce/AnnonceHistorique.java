@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Annonce {
+public class AnnonceHistorique extends UtilitaireHistorique {
 
 	private String categorie;
 	private String sousCategorie;							// TODO Maison.Ameublement / Maison.Electromenager / Maison.Arts De La Table
