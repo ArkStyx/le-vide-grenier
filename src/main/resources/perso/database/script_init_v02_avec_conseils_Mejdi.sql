@@ -40,12 +40,6 @@ CREATE TABLE lvg.tb_categorie (
 	suppression								TIMESTAMP NOT NULL
 );
 
-
-
-
-
-
-
 CREATE TABLE lvg.tb_localisation (
 	localisation_id							SERIAL PRIMARY KEY,
 	adresse_precise							VARCHAR(750) NOT NULL,
@@ -165,14 +159,6 @@ CREATE TABLE lvg.tb_filtre_location (
 	suppression								TIMESTAMP NOT NULL,
 	FOREIGN KEY (filtre_immobilier_id)		REFERENCES lvg.tb_filtre_immobilier (filtre_immobilier_id)
 );
-
-
-
-
--- TODO CORRIGER lvg.tb_type_produit	/	FOREIGN KEY (filtre_maison_id)	====>	TROP DE CREATION DE LIGNES
--- TODO CORRIGER lvg.tb_produit			/	FOREIGN KEY (filtre_maison_id)	====>	TROP DE CREATION DE LIGNES
--- TODO CORRIGER lvg.tb_matiere			/	FOREIGN KEY (filtre_maison_id)	====>	TROP DE CREATION DE LIGNES
--- TODO CORRIGER lvg.tb_colori			/	FOREIGN KEY (filtre_maison_id)	====>	TROP DE CREATION DE LIGNES
 
 CREATE TABLE lvg.tb_type_produit (
 	libelle_type_produit			VARCHAR(50) UNIQUE NOT NULL,
