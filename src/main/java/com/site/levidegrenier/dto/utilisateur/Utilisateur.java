@@ -18,10 +18,13 @@ public class Utilisateur {
 	private String numeroTelephone;
 	private String numeroTelephonePortable;
 	private String email;
-	private Adresse adresse;
+	private String adresse;
+	private String complementAdresse;
+	private String ville;
+	private String codePostal;
 	private String dateInscription;
-	private String delaiReponse;
-	private boolean siParticulier;
+	private int delaiReponseEnMinutes;
+	private boolean siProfessionnel;
 	private List<Annonce> listeAnnonces;
 	private List<Annonce> listeAnnoncesFavorites;
 }
