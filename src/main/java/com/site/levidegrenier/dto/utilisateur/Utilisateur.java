@@ -25,6 +25,8 @@ public class Utilisateur {
 	private String dateInscription;
 	private int delaiReponseEnMinutes;
 	private boolean siProfessionnel;
+	
+	// TODO COMMENT DIFFERENCIER
 	private List<Annonce> listeAnnonces;
 	private List<Annonce> listeAnnoncesFavorites;
 }

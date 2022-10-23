@@ -6,7 +6,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.site.levidegrenier.dto.utilisateur.LocalisationGps;
 import com.site.levidegrenier.dto.utilisateur.Utilisateur;
-import com.site.levidegrenier.utilities.UtilitaireHistorique;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
