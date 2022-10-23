@@ -4,7 +4,7 @@ CREATE TABLE lvg.tb_utilisateur (
 	prenom											VARCHAR(50) NOT NULL,
 	numero_telephone								VARCHAR(15),
 	numero_telephone_portable						VARCHAR(15),
-	email											VARCHAR(250) NOT NULL,
+	email											TEXT  NOT NULL,
 	adresse											VARCHAR(250) NOT NULL,
 	complement_adresse								VARCHAR(250) NOT NULL,
 	ville											VARCHAR(250) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE lvg.tb_utilisateur_historique (
 	prenom											VARCHAR(50) NOT NULL,
 	numero_telephone								VARCHAR(15),
 	numero_telephone_portable						VARCHAR(15),
-	email											VARCHAR(250) NOT NULL,
+	email											TEXT NOT NULL,
 	adresse											VARCHAR(250) NOT NULL,
 	complement_adresse								VARCHAR(250) NOT NULL,
 	ville											VARCHAR(250) NOT NULL,
@@ -56,14 +56,9 @@ CREATE TABLE lvg.tb_localisation_gps (
 	suppression										TIMESTAMP NOT NULL
 );
 
-
--- TODO FIXME - COMMENT GERER LES ANNONCES UTILISATEURS/ANNONCES PREFEREES ?
-
-
-
 CREATE TABLE lvg.tb_annonce (
 	annonce_id										SERIAL PRIMARY KEY,
-	email											VARCHAR(250) NOT NULL,
+	email											TEXT NOT NULL,
 	categorie_id									INTEGER NOT NULL,
 	localisation_gps_id								INTEGER NOT NULL,
 	prix											INTEGER NOT NULL,
@@ -76,7 +71,7 @@ CREATE TABLE lvg.tb_annonce (
 
 CREATE TABLE lvg.tb_annonce_historique (
 	annonce_historique_id							SERIAL PRIMARY KEY,
-	email											VARCHAR(250) NOT NULL,
+	email											TEXT NOT NULL,
 	categorie_id									INTEGER NOT NULL,
 	localisation_gps_id								INTEGER NOT NULL,
 	annonce_id										INTEGER NOT NULL,
@@ -208,3 +203,34 @@ CREATE TABLE lvg.tb_colori (
 	FOREIGN KEY (filtre_maison_id)					REFERENCES lvg.tb_filtre_maison (filtre_maison_id),
 	UNIQUE(libelle_couleur)
 );
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+CREATE TABLE tb_annonce_preferee (
+	annonce_preferee_id								INTEGER,
+	email											TEXT,
+	FOREIGN KEY (annonce_preferee_id)				REFERENCES lvg.tb_annonce (annonce_id),
+	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email)
+);
+
+-- TODO FIXME - COMMENT GERER LES ANNONCES UTILISATEURS/ANNONCES PREFEREES ?
+-- ====>	TABLE D'ASSOCIATION ?
+
+
+-- TODO FIXME - COMMENT GERER LES ANNONCES RECHERCHES PREFEREES ?
+-- ====>	SI TABLE D'ASSOCIATION, ALORS LA DECOUPE ACTUELLE N'EST PAS BONNE....
+
+
+
+
+
+
+
+
