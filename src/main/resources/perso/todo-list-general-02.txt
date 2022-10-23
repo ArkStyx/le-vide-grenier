@@ -108,10 +108,11 @@ https://stackoverflow.com/questions/2559411/sql-mysql-vs-nosql-couchdb
 POSTGRESQL (14 & 15) - CONTRAINTE UNIQUE NULL
 https://stackoverflow.com/questions/20154033/allow-null-in-unique-column
 
+POSTGRESQL - CITEXT pour les emails
+https://dba.stackexchange.com/questions/68266/what-is-the-best-way-to-store-an-email-address-in-postgresql#:~:text=3.1.,chars%20(including%20the%20%40%20).
 
-
-
-
+POSTGRESQL - VARCHAR et TEXT sont les mêmes choses
+https://stackoverflow.com/questions/4848964/difference-between-text-and-varchar-character-varying
 
 
 
