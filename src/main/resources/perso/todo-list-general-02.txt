@@ -114,7 +114,8 @@ https://dba.stackexchange.com/questions/68266/what-is-the-best-way-to-store-an-e
 POSTGRESQL - VARCHAR et TEXT sont les mêmes choses
 https://stackoverflow.com/questions/4848964/difference-between-text-and-varchar-character-varying
 
-
+POSTGRESQL - Creer une extension CITEXT
+https://stackoverflow.com/questions/15981197/postgresql-error-type-citext-does-not-exist
 
 
 

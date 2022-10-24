@@ -3,6 +3,7 @@ package com.site.levidegrenier.dto.utilisateur;
 import java.util.List;
 
 import com.site.levidegrenier.dto.annonce.Annonce;
+import com.site.levidegrenier.dto.annonce.filtre.AnnonceFiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +27,9 @@ public class Utilisateur {
 	private int delaiReponseEnMinutes;
 	private boolean siProfessionnel;
 	
-	// TODO COMMENT DIFFERENCIER
 	private List<Annonce> listeAnnonces;
 	private List<Annonce> listeAnnoncesFavorites;
+	
+	// TODO RENOMMER AnnonceFiltreCommun EN Recherche
+	private List<AnnonceFiltreCommun> listeRecherchesFavorites;
 }

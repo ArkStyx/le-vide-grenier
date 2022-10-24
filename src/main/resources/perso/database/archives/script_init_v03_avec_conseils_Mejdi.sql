@@ -98,6 +98,22 @@ CREATE TABLE lvg.tb_photo (
 	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
 );
 
+CREATE TABLE lvg.tb_type_bien_immobilier (
+	libelle_type_bien_immobilier					VARCHAR(100) NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	UNIQUE(libelle_type_bien_immobilier)
+);
+
+CREATE TABLE lvg.tb_type_vente_immobiliere (
+	libelle_type_vente_immobiliere					VARCHAR(100) NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	UNIQUE(libelle_type_vente_immobiliere)
+);
+
 CREATE TABLE lvg.tb_filtre_maison (
 	filtre_maison_id								SERIAL PRIMARY KEY,
 	si_annonce_avec_livraison						BOOLEAN NOT NULL,
@@ -118,22 +134,6 @@ CREATE TABLE lvg.tb_filtre_animal (
 	modification									TIMESTAMP NOT NULL,
 	suppression										TIMESTAMP NOT NULL,
 	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
-);
-
-CREATE TABLE lvg.tb_type_bien_immobilier (
-	libelle_type_bien_immobilier					VARCHAR(100) NOT NULL,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL,
-	UNIQUE(libelle_type_bien_immobilier)
-);
-
-CREATE TABLE lvg.tb_type_vente_immobiliere (
-	libelle_type_vente_immobiliere					VARCHAR(100) NOT NULL,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL,
-	UNIQUE(libelle_type_vente_immobiliere)
 );
 
 CREATE TABLE lvg.tb_filtre_immobilier (
@@ -214,10 +214,10 @@ CREATE TABLE lvg.tb_colori (
 
 
 CREATE TABLE tb_annonce_preferee (
-	annonce_preferee_id								INTEGER,
 	email											TEXT,
-	FOREIGN KEY (annonce_preferee_id)				REFERENCES lvg.tb_annonce (annonce_id),
-	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email)
+	annonce_preferee_id								INTEGER,
+	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email),
+	FOREIGN KEY (annonce_preferee_id)				REFERENCES lvg.tb_annonce (annonce_id)
 );
 
 
@@ -230,7 +230,7 @@ CREATE TABLE tb_annonce_preferee (
 -- ====>	SI TABLE D'ASSOCIATION, ALORS LA DECOUPE ACTUELLE N'EST PAS BONNE....
 
 
-
+-- TODO FIXME COMMENT GERER tb_recherche_preferee ????
 
 
 
