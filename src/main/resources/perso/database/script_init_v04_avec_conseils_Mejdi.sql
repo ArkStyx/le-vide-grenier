@@ -114,28 +114,6 @@ CREATE TABLE lvg.tb_type_vente_immobiliere (
 	UNIQUE(libelle_type_vente_immobiliere)
 );
 
-CREATE TABLE lvg.tb_annonce_maison (
-	annonce_maison_id								SERIAL PRIMARY KEY,
-	si_annonce_avec_livraison						BOOLEAN NOT NULL,
-	si_disponible									BOOLEAN NOT NULL,
-	si_don											BOOLEAN NOT NULL,
-	annonce_id										INTEGER NOT NULL,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL,
-	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
-);
-
-CREATE TABLE lvg.tb_annonce_animal (
-	annonce_animal_id								SERIAL PRIMARY KEY,
-	type_animal										VARCHAR(50) NOT NULL,
-	annonce_id										INTEGER NOT NULL,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL,
-	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
-);
-
 CREATE TABLE lvg.tb_annonce_immobilier (
 	annonce_immobilier_id							SERIAL PRIMARY KEY,
 	libelle_type_bien_immobilier					VARCHAR(100) NOT NULL,
@@ -162,6 +140,28 @@ CREATE TABLE lvg.tb_annonce_location (
 	modification									TIMESTAMP NOT NULL,
 	suppression										TIMESTAMP NOT NULL,
 	FOREIGN KEY (annonce_immobilier_id)				REFERENCES lvg.tb_annonce_immobilier (annonce_immobilier_id)
+);
+
+CREATE TABLE lvg.tb_annonce_maison (
+	annonce_maison_id								SERIAL PRIMARY KEY,
+	si_annonce_avec_livraison						BOOLEAN NOT NULL,
+	si_disponible									BOOLEAN NOT NULL,
+	si_don											BOOLEAN NOT NULL,
+	annonce_id										INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
+);
+
+CREATE TABLE lvg.tb_annonce_animal (
+	annonce_animal_id								SERIAL PRIMARY KEY,
+	type_animal										VARCHAR(50) NOT NULL,
+	annonce_id										INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (annonce_id)						REFERENCES lvg.tb_annonce (annonce_id)
 );
 
 CREATE TABLE lvg.tb_type_produit (
@@ -203,51 +203,6 @@ CREATE TABLE lvg.tb_colori (
 	FOREIGN KEY (annonce_maison_id)					REFERENCES lvg.tb_annonce_maison (annonce_maison_id),
 	UNIQUE(libelle_couleur)
 );
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-CREATE TABLE tb_annonce_preferee (
-	email											TEXT,
-	annonce_preferee_id								INTEGER,
-	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email),
-	FOREIGN KEY (annonce_preferee_id)				REFERENCES lvg.tb_annonce (annonce_id)
-);
-
-
--- TODO FIXME - COMMENT GERER LES ANNONCES UTILISATEURS/ANNONCES PREFEREES ?
--- ====>	TABLE D'ASSOCIATION
---			====>	COMMENT EMPECHER LES GARS DE METTRE LEURS ANNONCES EN ANNONCES PREFEREES ? VIA UN SERVICE JAVA ?
-
-
--- TODO FIXME - COMMENT GERER LES ANNONCES RECHERCHES PREFEREES ?
--- ====>	SI TABLE D'ASSOCIATION, ALORS LA DECOUPE ACTUELLE N'EST PAS BONNE....
-
-
--- TODO FIXME COMMENT GERER tb_recherche_preferee ????
-
-
-
-
-
-
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
--- TODO TEST SUR LES RECHERCHES
 
 
 CREATE TABLE lvg.tb_recherche (
@@ -328,45 +283,6 @@ CREATE TABLE lvg.tb_recherche_location (
 	FOREIGN KEY (recherche_immobilier_id)				REFERENCES lvg.tb_recherche_immobilier (recherche_immobilier_id)
 );
 
-CREATE TABLE lvg.tb_type_produit (
-	libelle_type_produit							VARCHAR(50) UNIQUE NOT NULL,
-	recherche_maison_id								INTEGER,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL, 
-	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
-	UNIQUE(libelle_type_produit)
-);
-
-CREATE TABLE lvg.tb_produit (
-	libelle_produit									VARCHAR(50) NOT NULL,
-	recherche_maison_id								INTEGER,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL, 
-	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
-	UNIQUE(libelle_produit)
-);
-
-CREATE TABLE lvg.tb_matiere (
-	libelle_matiere									VARCHAR(50) NOT NULL,
-	recherche_maison_id								INTEGER,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL, 
-	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
-	UNIQUE(libelle_matiere)
-);
-
-CREATE TABLE lvg.tb_colori (
-	libelle_couleur									VARCHAR(50) NOT NULL,
-	recherche_maison_id								INTEGER,
-	creation										TIMESTAMP NOT NULL,
-	modification									TIMESTAMP NOT NULL,
-	suppression										TIMESTAMP NOT NULL, 
-	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
-	UNIQUE(libelle_couleur)
-);
 
 
 
