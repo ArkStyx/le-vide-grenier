@@ -236,3 +236,148 @@ CREATE TABLE tb_annonce_preferee (
 
 
 
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-- TODO TEST SUR LES RECHERCHES
+
+
+CREATE TABLE lvg.tb_recherche (
+	recherche_id									SERIAL PRIMARY KEY,
+	email											TEXT NOT NULL,
+	categorie_id									INTEGER NOT NULL,
+	prix											INTEGER NOT NULL,
+	si_offre										BOOLEAN	NOT NULL,
+	si_annonce_urgente								BOOLEAN NOT NULL,
+	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email),
+	FOREIGN KEY (categorie_id)						REFERENCES lvg.tb_categorie (categorie_id),
+);
+
+CREATE TABLE lvg.tb_recherche_historique (
+	recherche_historique_id							SERIAL PRIMARY KEY,
+	email											TEXT NOT NULL,
+	categorie_id									INTEGER NOT NULL,
+	recherche_id									INTEGER NOT NULL,
+	prix											INTEGER NOT NULL,
+	si_offre										BOOLEAN	NOT NULL,
+	si_annonce_urgente								BOOLEAN NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email),
+	FOREIGN KEY (categorie_id)						REFERENCES lvg.tb_categorie (categorie_id),
+	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id)
+);
+
+
+CREATE TABLE lvg.tb_recherche_maison (
+	recherche_maison_id								SERIAL PRIMARY KEY,
+	si_annonce_avec_livraison						BOOLEAN NOT NULL,
+	si_disponible									BOOLEAN NOT NULL,
+	si_don											BOOLEAN NOT NULL,
+	recherche_id									INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id)
+);
+
+CREATE TABLE lvg.tb_recherche_animal (
+	recherche_animal_id								SERIAL PRIMARY KEY,
+	type_animal										VARCHAR(50) NOT NULL,
+	recherche_id									INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id)
+);
+
+CREATE TABLE lvg.tb_recherche_immobilier (
+	recherche_immobilier_id							SERIAL PRIMARY KEY,
+	libelle_type_bien_immobilier					VARCHAR(100) NOT NULL,
+	libelle_type_vente_immobiliere					VARCHAR(100) NOT NULL,
+	surface_habitable								INTEGER,
+	surface_rerrain									INTEGER,
+	nombre_de_pieces								INTEGER,
+	classe_energie									VARCHAR(50),
+	gaz_effet_serre									VARCHAR(50),
+	recherche_id									INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id)
+	FOREIGN KEY (libelle_type_bien_immobilier)		REFERENCES lvg.tb_type_bien_immobilier (libelle_type_bien_immobilier),
+	FOREIGN KEY (libelle_type_vente_immobiliere)	REFERENCES lvg.tb_type_vente_immobiliere (libelle_type_vente_immobiliere)
+);
+
+CREATE TABLE lvg.tb_recherche_location (
+	recherche_location_id							SERIAL PRIMARY KEY,
+	si_meublee										BOOLEAN NOT NULL,
+	recherche_immobilier_id							INTEGER NOT NULL,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL,
+	FOREIGN KEY (recherche_immobilier_id)				REFERENCES lvg.tb_recherche_immobilier (recherche_immobilier_id)
+);
+
+CREATE TABLE lvg.tb_type_produit (
+	libelle_type_produit							VARCHAR(50) UNIQUE NOT NULL,
+	recherche_maison_id								INTEGER,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL, 
+	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
+	UNIQUE(libelle_type_produit)
+);
+
+CREATE TABLE lvg.tb_produit (
+	libelle_produit									VARCHAR(50) NOT NULL,
+	recherche_maison_id								INTEGER,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL, 
+	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
+	UNIQUE(libelle_produit)
+);
+
+CREATE TABLE lvg.tb_matiere (
+	libelle_matiere									VARCHAR(50) NOT NULL,
+	recherche_maison_id								INTEGER,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL, 
+	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
+	UNIQUE(libelle_matiere)
+);
+
+CREATE TABLE lvg.tb_colori (
+	libelle_couleur									VARCHAR(50) NOT NULL,
+	recherche_maison_id								INTEGER,
+	creation										TIMESTAMP NOT NULL,
+	modification									TIMESTAMP NOT NULL,
+	suppression										TIMESTAMP NOT NULL, 
+	FOREIGN KEY (recherche_maison_id)				REFERENCES lvg.tb_recherche_maison (recherche_maison_id),
+	UNIQUE(libelle_couleur)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
