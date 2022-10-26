@@ -1,8 +1,8 @@
-package com.site.levidegrenier.dto.annonce.filtre.immobilier;
+package com.site.levidegrenier.dto.filtre.immobilier;
 
 import java.util.Set;
 
-import com.site.levidegrenier.dto.annonce.filtre.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.filtre.FiltreCommun;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class AnnonceFiltreImmobilier extends AnnonceFiltreCommun {
+public class FiltreImmobilier extends FiltreCommun {
 
 	private Set<String> listeTypeBienImmobilier;
 	private Set<String> listeTypeVenteImmobiliere;

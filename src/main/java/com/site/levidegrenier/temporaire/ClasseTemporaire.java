@@ -3,10 +3,10 @@ package com.site.levidegrenier.temporaire;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import com.site.levidegrenier.dto.annonce.filtre.animal.AnnonceFiltreAnimaux;
-import com.site.levidegrenier.dto.annonce.filtre.immobilier.AnnonceFiltreImmobilier;
-import com.site.levidegrenier.dto.annonce.filtre.maison.AnnonceFiltreMaison;
-import com.site.levidegrenier.dto.annonce.filtre.vehicule.AnnonceFiltreVehicule;
+import com.site.levidegrenier.dto.filtre.animal.FiltreAnimaux;
+import com.site.levidegrenier.dto.filtre.immobilier.FiltreImmobilier;
+import com.site.levidegrenier.dto.filtre.maison.FiltreMaison;
+import com.site.levidegrenier.dto.filtre.vehicule.FiltreVehicule;
 import com.site.levidegrenier.utilities.UtilitaireFiltre;
 
 public class ClasseTemporaire {
@@ -18,7 +18,7 @@ public class ClasseTemporaire {
 	// TODO A SUPPRIMER - METHODE DE TEST
 	public void methodeDeTest_FiltreAnimaux() {
 		
-		AnnonceFiltreAnimaux annonceFiltreAnimaux = new AnnonceFiltreAnimaux();
+		FiltreAnimaux annonceFiltreAnimaux = new FiltreAnimaux();
 		annonceFiltreAnimaux.setPrixMinimum(null);
 		annonceFiltreAnimaux.setPrixMaximum(null);
 		annonceFiltreAnimaux.setSiAfficherSeulementAnnonceUrgente(false);
@@ -49,7 +49,7 @@ public class ClasseTemporaire {
 		listeTypeVenteImmobiliere.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_ANCIEN);
 		listeTypeVenteImmobiliere.add(UtilitaireFiltre.IMMOBILIER_TYPE_VENTE_NEUF);
 
-		AnnonceFiltreImmobilier annonceFiltreImmobilier = new AnnonceFiltreImmobilier();
+		FiltreImmobilier annonceFiltreImmobilier = new FiltreImmobilier();
 		annonceFiltreImmobilier.setPrixMinimum(null);
 		annonceFiltreImmobilier.setPrixMaximum(null);
 		annonceFiltreImmobilier.setSiAfficherSeulementAnnonceUrgente(false);
@@ -69,7 +69,7 @@ public class ClasseTemporaire {
 	// TODO A SUPPRIMER - METHODE DE TEST
 	public void methodeDeTest_FiltreVehicule() {
 		
-		AnnonceFiltreVehicule annonceFiltreVehicule = new AnnonceFiltreVehicule();
+		FiltreVehicule annonceFiltreVehicule = new FiltreVehicule();
 		annonceFiltreVehicule.setPrixMinimum(null);
 		annonceFiltreVehicule.setPrixMaximum(null);
 		annonceFiltreVehicule.setSiAfficherSeulementAnnonceUrgente(false);
@@ -80,7 +80,7 @@ public class ClasseTemporaire {
 	// TODO A SUPPRIMER - METHODE DE TEST
 	public void methodeDeTest_FiltreMaison() {
 		
-		AnnonceFiltreMaison annonceFiltreMaison = new AnnonceFiltreMaison();
+		FiltreMaison annonceFiltreMaison = new FiltreMaison();
 		annonceFiltreMaison.setPrixMinimum(null);
 		annonceFiltreMaison.setPrixMaximum(null);
 		annonceFiltreMaison.setSiAfficherSeulementAnnonceUrgente(false);

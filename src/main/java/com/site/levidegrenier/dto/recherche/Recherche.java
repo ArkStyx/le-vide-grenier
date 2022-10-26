@@ -1,4 +1,4 @@
-package com.site.levidegrenier.dto.annonce;
+package com.site.levidegrenier.dto.recherche;
 
 import java.util.LinkedHashMap;
 
@@ -15,28 +15,39 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Annonce {
+public class Recherche {
 
 	private String categorie;
-	private String sousCategorie;							// TODO Maison.Ameublement / Maison.Electromenager / Maison.Arts De La Table
-	private FiltreCommun annonceFiltre;									// TODO FILTRE	====> LIER AVEC CATEGORIE ET SOUS-CATEGORIE
+	private String sousCategorie;
+	private FiltreCommun annonceFiltre;
 	private LinkedHashMap<String, MultipartFile> photos;
 	private LocalisationGps localisationGps;
 	private Utilisateur utilisateur;
-
-
+	
+	
 	/*
 	TODO A SUPPRIMER - POUR RAPPEL
-	CREATE TABLE lvg.tb_annonce (
+	
+	CREATE TABLE lvg.tb_recherche (
+		recherche_id									SERIAL PRIMARY KEY,
 		email											TEXT NOT NULL,
 		categorie_id									INTEGER NOT NULL,
-		localisation_gps_id								INTEGER NOT NULL,
 		prix											INTEGER NOT NULL,
 		si_offre										BOOLEAN	NOT NULL,
 		si_annonce_urgente								BOOLEAN NOT NULL,
 	);
-	
-		CREATE TABLE lvg.tb_annonce_immobilier (
+
+		CREATE TABLE lvg.tb_recherche_maison (
+			si_annonce_avec_livraison						BOOLEAN NOT NULL,
+			si_disponible									BOOLEAN NOT NULL,
+			si_don											BOOLEAN NOT NULL,
+		);
+
+		CREATE TABLE lvg.tb_recherche_animal (
+			type_animal										VARCHAR(50) NOT NULL,
+		);
+
+		CREATE TABLE lvg.tb_recherche_immobilier (
 			libelle_type_bien_immobilier					VARCHAR(100) NOT NULL,
 			libelle_type_vente_immobiliere					VARCHAR(100) NOT NULL,
 			surface_habitable								INTEGER,
@@ -45,19 +56,10 @@ public class Annonce {
 			classe_energie									VARCHAR(50),
 			gaz_effet_serre									VARCHAR(50),
 		);
-			CREATE TABLE lvg.tb_annonce_location (
-				si_meublee										BOOLEAN NOT NULL,
-			);
-	
-		CREATE TABLE lvg.tb_annonce_maison (
-			si_annonce_avec_livraison						BOOLEAN NOT NULL,
-			si_disponible									BOOLEAN NOT NULL,
-			si_don											BOOLEAN NOT NULL,
-		);
-	
-		CREATE TABLE lvg.tb_annonce_animal (
-			type_animal										VARCHAR(50) NOT NULL,
-		);
-	*/
 
+		CREATE TABLE lvg.tb_recherche_location (
+			si_meublee										BOOLEAN NOT NULL,
+		);
+
+	*/
 }
