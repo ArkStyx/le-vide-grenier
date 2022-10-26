@@ -213,7 +213,7 @@ CREATE TABLE lvg.tb_recherche (
 	si_offre										BOOLEAN	NOT NULL,
 	si_annonce_urgente								BOOLEAN NOT NULL,
 	FOREIGN KEY (email)								REFERENCES lvg.tb_utilisateur (email),
-	FOREIGN KEY (categorie_id)						REFERENCES lvg.tb_categorie (categorie_id),
+	FOREIGN KEY (categorie_id)						REFERENCES lvg.tb_categorie (categorie_id)
 );
 
 CREATE TABLE lvg.tb_recherche_historique (
@@ -268,7 +268,7 @@ CREATE TABLE lvg.tb_recherche_immobilier (
 	creation										TIMESTAMP NOT NULL,
 	modification									TIMESTAMP NOT NULL,
 	suppression										TIMESTAMP NOT NULL,
-	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id)
+	FOREIGN KEY (recherche_id)						REFERENCES lvg.tb_recherche (recherche_id),
 	FOREIGN KEY (libelle_type_bien_immobilier)		REFERENCES lvg.tb_type_bien_immobilier (libelle_type_bien_immobilier),
 	FOREIGN KEY (libelle_type_vente_immobiliere)	REFERENCES lvg.tb_type_vente_immobiliere (libelle_type_vente_immobiliere)
 );
@@ -282,16 +282,6 @@ CREATE TABLE lvg.tb_recherche_location (
 	suppression										TIMESTAMP NOT NULL,
 	FOREIGN KEY (recherche_immobilier_id)				REFERENCES lvg.tb_recherche_immobilier (recherche_immobilier_id)
 );
-
-
-
-
-
-
-
-
-
-
 
 
 

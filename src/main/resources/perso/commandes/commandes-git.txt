@@ -35,3 +35,10 @@ TODO COMPRENDRE CE QUE CA FAIT EXACTEMENT
 01.XXX) Dans gitbash faire commande suivante - ??? :					"git rebase origin/master"
 
 
+
+
+clone un repository :				git clone https://github.com/ArkStyx/spring5webapp.git
+
+fork		====>	un "fork" est une copie d'un repository existant
+
+
