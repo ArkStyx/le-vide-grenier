@@ -3,7 +3,7 @@ package com.site.levidegrenier.dto.utilisateur;
 import java.util.List;
 
 import com.site.levidegrenier.dto.annonce.Annonce;
-import com.site.levidegrenier.dto.annonce.filtre.AnnonceFiltreCommun;
+import com.site.levidegrenier.dto.recherche.Recherche;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,9 +27,11 @@ public class Utilisateur {
 	private int delaiReponseEnMinutes;
 	private boolean siProfessionnel;
 	
+	
+	// TODO COMPARER FILTRE ET SOUS-RECHERCHE EN BDD
+	// TODO FUSIONNER LES TABLES SI BESOIN
+	
 	private List<Annonce> listeAnnonces;
 	private List<Annonce> listeAnnoncesFavorites;
-	
-	// TODO RENOMMER AnnonceFiltreCommun EN Recherche
-	private List<AnnonceFiltreCommun> listeRecherchesFavorites;
+	private List<Recherche> listeRecherchesFavorites;
 }
