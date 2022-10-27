@@ -12,12 +12,17 @@ TODO HISTORIQUE SUR QUELLES TABLES ?
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
+CREATE TABLE lvg.tb_annonce (
+CREATE TABLE lvg.tb_annonce_historique (
 
 
-
-
-
-
+DIFFERENCE lvg.tb_annonce ET lvg.tb_recherche :
+	localisation_gps_id								INTEGER NOT NULL,
+	FOREIGN KEY (localisation_gps_id)				REFERENCES lvg.tb_localisation_gps (localisation_gps_id)
+	
+DIFFERENCE lvg.tb_annonce_historique ET lvg.tb_recherche_historique :
+	localisation_gps_id								INTEGER NOT NULL,
+	FOREIGN KEY (localisation_gps_id)				REFERENCES lvg.tb_localisation_gps (localisation_gps_id)
 
 
 
