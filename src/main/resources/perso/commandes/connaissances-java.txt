@@ -1,0 +1,35 @@
+
+JAVA WHEN TO USE ABSTRACT CLASS VS INTERFACE :
+
+https://www.tutorialspoint.com/when-to-use-an-abstract-class-and-when-to-use-an-interface-in-java
+
+If the functionality we are creating will be useful across a wide range of disparate objects, use an interface. 
+Abstract classes should be used primarily for objects that are closely related, whereas interfaces are best suited for providing a common functionality to unrelated classes.
+Interfaces are a good choice when we think that the API will not change for a while.
+Interfaces are also good when we want to have something similar to multiple inheritances since we can implement multiple interfaces.
+If we are designing small, concise bits of functionality, use interfaces. If we are designing large functional units, use an abstract class.
+
+---------------------------
+---------------------------
+
+https://www.baeldung.com/java-interface-vs-abstract-class
+
+Consider using the interface when our problem makes the statement “A is capable of [doing this]”. 
+For example, “Clonable is capable of cloning an object”, “Drawable is capable of drawing a shape”, etc.
+
+Consider using abstract classes and inheritance when our problem makes the evidence “A is a B”. 
+For example, “Dog is an Animal”, “Lamborghini is a Car”, etc.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+https://blog.paumard.org/cours/jpa/chap05-heritage-entite.html
+
+---------------------------
+---------------------------
+
+
+
+
+
