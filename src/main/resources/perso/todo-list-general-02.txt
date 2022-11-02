@@ -117,5 +117,31 @@ https://stackoverflow.com/questions/4848964/difference-between-text-and-varchar-
 POSTGRESQL - Creer une extension CITEXT
 https://stackoverflow.com/questions/15981197/postgresql-error-type-citext-does-not-exist
 
+-------------------------
+-------------------------
+
+MAVEN RELEASE PLUGIN
+https://www.baeldung.com/maven-release-nexus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

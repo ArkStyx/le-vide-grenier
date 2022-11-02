@@ -9,6 +9,7 @@ Initialiser le projet Spring Boot :			"git init"
 Ajouter tous les fichiers existants :		"git add ."
 
 
+
 ---------------------------------------------------------------------------------------------------------
 -----							Modifications de fichiers dans le workspace							-----
 ---------------------------------------------------------------------------------------------------------
@@ -18,6 +19,7 @@ Ajouter un fichier modifié : 				"git add src/main/resources/todo-list.txt"
 Ajouter tous les fichiers modifiés :		"git add ."
 
 
+
 ---------------------------------------------------------------------------------------------------------
 -----								Envoies de fichiers sur le repository							-----
 ---------------------------------------------------------------------------------------------------------
@@ -25,16 +27,63 @@ Ajouter tous les fichiers modifiés :		"git add ."
 Verifier nom et adresse distante du repository :		"git remote -v"
 Pousser sur la branche distante "origin" :				"git push origin main" (ou "master")
 
+
+
 ---------------------------------------------------------------------------------------------------------
 -----									Modification sur les branches								-----
 ---------------------------------------------------------------------------------------------------------
 
-Supprimer une branche localement :		"git branch -d [LOCAL_BRANCH_NAME]"
-Supprimer une branche à distance :		"git push origin --delete (REMOTE_BRANCH_NAME]"
+Creer une branche localement :			"git branch -c [LOCAL_BRANCH_NAME]"
+
 Renommer une branche:					"git branch -m [OLD_NAME] [NEW_NAME]"
+
+Supprimer une branche localement :		"git branch -d [LOCAL_BRANCH_NAME]"
+Supprimer une branche à distance :		"git push origin --delete [REMOTE_BRANCH_NAME]"
+
 
 
 https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+-----									Commandes sur les commit									-----
+---------------------------------------------------------------------------------------------------------
+Afficher les logs des derniers commits :		"git log --reflog"
+Annuler un commit :								"git revert [HASHCODE_DU_COMMIT]"
+
+
+
+https://stackoverflow.com/questions/4786972/get-a-list-of-all-git-commits-including-the-lost-ones
+
+https://stackoverflow.com/questions/949314/how-do-i-get-the-hash-for-the-current-commit-in-git
+
+
+https://www.baeldung.com/git-revert-commit
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+-----									Commandes sur les tags										-----
+---------------------------------------------------------------------------------------------------------
+
+Supprimer un tag localement (pouvant faire planter un maven release) :		git tag --delete [TAG_NAME]
+Supprimer un tag à distance : 												git push --delete origin [TAG_NAME]
+
+
+
+
+
+
 
 
 
