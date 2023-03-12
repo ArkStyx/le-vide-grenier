@@ -14,7 +14,20 @@ Changer l'ordre de création des différentes tables
 
 
 
+---------------------------------------------------------------------------------------------------------
+-----									CONNAISSANCES DE BASE										-----
+---------------------------------------------------------------------------------------------------------
 
+Impossible d'avoir la version de JAVA et/ou de MAVEN
+PROBLEME :
+The JAVA_HOME environment variable is not defined correctly, this environment variable is needed to run this program.
+
+https://stackoverflow.com/a/51621901
+Following is the best way to get of the issue , check following on classpath:
+Make sure JAVA_HOME system variable must have till jdk e.g C:\Program Files\Java\jdk1.7.0_80 , don't append bin here.
+Because MAVEN will look for jre which is under C:\Program Files\Java\jdk1.7.0_80
+Set %JAVA_HOME%\bin in classpath .
+Then try Maven version .
 
 
 
