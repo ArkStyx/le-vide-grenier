@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------------
 
 Lister les images docker :		docker ps
-Arrêter une image docker : 		docker stop [IMAGE_ID]
+Arrêter une image docker : 		docker stop [CONTAINER_ID]
 
 
 
