@@ -58,6 +58,63 @@ mvn -version
 ---------------------------
 ---------------------------
 
+https://stackoverflow.com/questions/57815240/is-there-a-way-to-open-the-simple-sql-editor-in-eclipse-by-default
+
+Now listed as an answer, by popular demand (albeit one).
+I'm not familiar with these editors but it may be possible to change the default editor for the file type in the Preferences in 'General > Editors > File Associations'.
+Yes that's the ticket. 
+In File Associations, under File Types, select *.sql, then below select Add... find SQL Editor, Ok, and then select the SQL Editor newly added to the Associated Editors list, and then hit the Default button. 
+It now appears as SQL Editor (default). Apply and Close, and done. 
+
+---------------------------
+---------------------------
+
+https://stackoverflow.com/questions/98610/how-can-i-get-eclipse-to-show-files
+
+In the package explorer, in the upper right corner of the view, there is a little down arrow. Tool tip will say view menu. 
+From that menu, select filters
+filters menu
+From there, uncheck .* resources.
+
+So Package Explorer -> View Menu -> Filters -> uncheck .* resources.
+
+With Eclipse Kepler and OS X this is a bit different:
+Package Explorer -> Customize View -> Filters -> uncheck .* resources
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JAVA REACTIVE PROGRAMMING :
+
+https://medium.com/@cheron.antoine/reactor-java-1-how-to-create-mono-and-flux-471c505fa158
+
+https://www.techtarget.com/searchapparchitecture/definition/reactive-programming
+
+https://www.codemotion.com/magazine/backend/benefits-of-reactive-programming-codemotion-magazine/
+
+---------------------------
+---------------------------
+
+JUNIT 4 VERS JUNIT 5
+https://www.baeldung.com/junit-5-runwith
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
