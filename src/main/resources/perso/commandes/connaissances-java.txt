@@ -99,17 +99,19 @@ https://www.codemotion.com/magazine/backend/benefits-of-reactive-programming-cod
 JUNIT 4 VERS JUNIT 5
 https://www.baeldung.com/junit-5-runwith
 
+---------------------------
+---------------------------
 
+SPRING RESTTEMPLATE
+https://www.baeldung.com/spring-rest-template-list
 
+---------------------------
+---------------------------
 
-
-
-
-
-
-
-
-
+MOCKITO BDD (Behaviour Driven Development)
+https://www.baeldung.com/bdd-mockito
+https://medium.com/pragmatic-programmers/mockito-versus-bddmockito-4acc3e232134
+https://github.com/LorenzoBettini/mockito-example/blob/master/mockito.example/src/test/java/com/example/EmployeeManagerBDDTest.java
 
 
 
