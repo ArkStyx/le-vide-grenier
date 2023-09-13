@@ -136,3 +136,40 @@ https://www.google.com/search?q=git+fetch+what+does+it+do&rlz=1C1CHBF_frFR962FR9
 https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch
 
 
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+-----											MODOP												-----
+---------------------------------------------------------------------------------------------------------
+
+01)	Verifier le nom des dernieres branches :
+git branch -vv
+
+02)	Creer une nouvelle branche :
+git branch -c [NOM_DE_MA_BRANCHE]
+
+03)	Se mettre sur la nouvelle branche :
+git checkout [NOM_DE_MA_BRANCHE]
+
+04) Ajouter tous les fichiers modifiés :
+git add .
+
+05) Commiter les fichiers modifiés
+git commit -m "[MESSAGE_DE_COMMIT]"
+
+06)	Pousser la branche "develop" sur le repository :
+git push origin [NOM_DE_MA_BRANCHE]
+
+07)	Se mettre sur la branche "main" :
+git checkout main
+
+08)	Merge la branche "develop" et "main" :
+git merge origin/develop
+
+
+
+
