@@ -113,6 +113,119 @@ https://www.baeldung.com/bdd-mockito
 https://medium.com/pragmatic-programmers/mockito-versus-bddmockito-4acc3e232134
 https://github.com/LorenzoBettini/mockito-example/blob/master/mockito.example/src/test/java/com/example/EmployeeManagerBDDTest.java
 
+---------------------------
+---------------------------
+
+FAIRE MARCHER MapStruct DANS SPRING-BOOT AVEC MAVEN :
+https://stackoverflow.com/questions/47109827/mapstruct-mapper-annotation-dont-create-bean
+
+---------------------------
+---------------------------
+
+INTERFACES FONCTIONNELLES
+https://www.baeldung.com/java-8-lambda-expressions-tips
+
+INTERFACES FONCTIONNELLES ET METHODES STATIQUES
+https://jenkov.com/tutorials/java-functional-programming/functional-interfaces.html
+
+---------------------------
+---------------------------
+
+parseInt vs valueOf
+https://stackoverflow.com/questions/508665/difference-between-parseint-and-valueof-in-java
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+https://stackoverflow.com/questions/5178854/convert-a-double-array-to-double-arraylist
+Arrays.asList(..) doesn't work with primitives.
+
+
+Using Java 8 Streams API this is achieved with
+	DoubleStream.of(doublesArray).boxed().collect(Collectors.toList());
+	
+Since java 16 this became a bit more concise:
+	DoubleStream.of(doublesArray).boxed().toList();
+	
+If returning an ArrayList as an implementation is required then use
+	DoubleStream.of(doublesArray).boxed().collect(Collectors.toCollection(ArrayList::new));
+This one-liner doesn't require any additional libraries.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Find shortest String in a stream
+https://www.benchresources.net/java-8-find-shortest-string-in-an-arrays-or-list-or-stream/
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+VERIFIER SI CHAR EST UPPERCASE
+https://www.tutorialspoint.com/check-whether-a-character-is-uppercase-or-not-in-java
+
+STRING TO CHAR ARRAY
+https://www.digitalocean.com/community/tutorials/string-char-array-java
+
+JAVA - REGEX ALL CAPITAL LETTER
+https://stackoverflow.com/questions/24186561/java-regular-expressions-for-capital-letters
+
+https://www.freecodecamp.org/news/what-does-mean-in-regex/
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+CALCULER LES CHIFFRES BINAIRES :
+https://www.calculator.net/binary-calculator.html
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+UTILISER UN COMPTEUR DYNAMIQUE DANS UNE JAVA STREAM (SUPER UTILE !!!!)
+https://stackoverflow.com/questions/38568129/incrementing-counter-in-stream-foreach-java-8
+
+
+ARRAY TO LIST
+https://www.baeldung.com/convert-array-to-list-and-list-to-array
+
+ARRAY DE TYPE PRIMITIF VERS LIST
+https://stackoverflow.com/questions/1073919/how-to-convert-int-into-listinteger-in-java
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+COMPTER LES ELEMENTS D'UN JAVA STREAM
+https://stackoverflow.com/questions/30451284/counting-elements-of-a-stream
+
+MAIN DIFFERENCE BETWEEN MAP AND REDUCE
+https://stackoverflow.com/questions/49934992/main-difference-between-map-and-reduce#:~:text=Both%20map%20and%20reduce%20have,the%20accumulator%20you%20eventually%20changed.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+EXEMPLES DE MODULOS :
+num : 753491
+num % 10 : 1
+num % 100 : 91
+num % 1000 : 491
+num % 10000 : 3491
+num % 100000 : 53491
+num % 1000000 : 753491
+====> Le nombre de zéro est égal aux nombres de chiffre en partant de la fin
+==>	num % 10 : 1 zéro / 1 chiffre en partant de la fin (1)
+==>	num % 100 : 2 zéros / 2 chiffres en partant de la fin (91)
+==>	num % 1000 : 3 zéros / 3 chiffres en partant de la fin (491)
+
+
+
+
+
 
 
 
