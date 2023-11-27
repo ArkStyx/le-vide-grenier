@@ -192,6 +192,7 @@ https://stackoverflow.com/questions/38568129/incrementing-counter-in-stream-fore
 ARRAY TO LIST
 https://www.baeldung.com/convert-array-to-list-and-list-to-array
 
+
 ARRAY DE TYPE PRIMITIF VERS LIST
 https://stackoverflow.com/questions/1073919/how-to-convert-int-into-listinteger-in-java
 
@@ -222,14 +223,172 @@ num % 1000000 : 753491
 ==>	num % 100 : 2 zéros / 2 chiffres en partant de la fin (91)
 ==>	num % 1000 : 3 zéros / 3 chiffres en partant de la fin (491)
 
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+REST TEMPLATE
+https://www.baeldung.com/spring-rest-template-list
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+@Value in ENUM ====> NON
+https://stackoverflow.com/questions/63947478/springboot-can-we-use-value-in-java-enums
+
+"No, it's not. The purpose for an Enum is to give us mapped data (fixed set of values) with limited scope. If we would to use @Value in Java enums, it would take the purpose of the enum away in the first place.
+The same goes for @Configuration, we do that when we want to inject instances in Spring's container. That doesn't make any sense for enums.
+If you post the actual reason for why you were trying to do that, we may be able to point you in the correct direction / solution."
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+SLF4J
+https://stackoverflow.com/questions/48081937/lombok-sl4fj-how-to-change-console-logger-lvl
+
+The log level for the output is not configured with Lombok, but with the used logging framework. SLF4J is a facade for Java logging frameworks. This is the explanation from https://www.slf4j.org/
+
+The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment time.
+
+To change the output log level, you have to figure out which of the logging frameworks is used and then look up on how to configure the log level for that log framework. Starting points could be the dependencies of the project or existing logging configurations
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+SPRING BOOT - @Value
+https://www.baeldung.com/spring-value-annotation
+
+
+UTILISATION DES METHODES STATIC
+https://www.baeldung.com/java-static-methods-use-cases
+
+
+JPA - COLLECTIONS D'ENUMS
+https://stackoverflow.com/questions/416208/jpa-map-collection-of-enums
+
+
+CONVERTER - CONVERTIR DES OBJETS EN TYPES DIFFERENTS
+https://stackoverflow.com/questions/57305532/how-to-use-mapstruct-for-different-data-types
 
 
 
+JPA - ERREUR "object references an unsaved transient instance - save the transient instance before flushing"
+https://stackoverflow.com/questions/2302802/how-to-fix-the-hibernate-object-references-an-unsaved-transient-instance-save
 
 
 
+JAVA 8 - STREAM
+https://www.java67.com/2016/03/how-to-get-arraylist-from-stream-in-java8-example.html
+
+JAVA 8 - How can I turn a List of Lists into a List in Java 8?
+https://stackoverflow.com/questions/25147094/how-can-i-turn-a-list-of-lists-into-a-list-in-java-8
 
 
 
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+JPA - NESTED LIST OBJECTS
+https://stackoverflow.com/questions/47996810/how-to-search-with-jparepository-and-nested-list-of-objects
+
+1ERE METHODE :
+	@Query("select commune from CommuneDomain commune inner join commune.listeCodesPostaux cp where cp.codePostal = ?1")
+	Set<CommuneDomain> recupererParCodePostal(String codePostal);
+	
+2EME METHODE :
+	Set<CommuneDomain> findByListeCodesPostaux_codePostal(String codePostal);
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+NOTEPAD ++ CONVERTIR EN SNAKE_CASE
+https://stackoverflow.com/questions/43768435/all-text-from-camelcase-to-snake-case
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+[A CONNAITRE PAR COEUR] JPA - EXPLICATIONS POUR BIEN GERER LES @OneToMany
+https://www.stackchief.com/blog/One%20To%20Many%20Example%20%7C%20Spring%20Data%20JPA
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+JAVA - COMPTER TOUTES LES ENUMS D'UNE CLASSE
+https://stackoverflow.com/questions/13109497/list-of-enum-values-in-java
+
+new ArrayList<MyEnum>(Arrays.asList(MyEnum.values()));
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+THYMELEAF - Methodes et variables d'iteration de liste
+https://www.baeldung.com/thymeleaf-iteration
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+JAVA - GENERIC ENUM METHOD
+https://stackoverflow.com/questions/16406298/java-generic-method-for-enums
+public static <E extends Enum<E>>
+String getEnumString(Class<E> clazz, String s){
+  for(E en : EnumSet.allOf(clazz)){
+    if(en.name().equalsIgnoreCase(s)){
+      return en.name();
+    }
+  }
+  return null;
+}
 
 
+JAVA - PAS DE METHODE Get(...) DANS LES Set
+https://stackoverflow.com/questions/7283338/getting-an-element-from-a-set
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+THYMELEAF
+https://stackoverflow.com/questions/46318008/css-file-cannot-be-located-thymeleaf-spring-boot
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+JAVA - STREAM ORDERING
+https://www.baeldung.com/java-stream-ordering
+
+
+BOOTSTRAP
+https://mdbootstrap.com/docs/standard/extended/table-filter/
+
+
+BOOTSTRAP 4 - MISE EN FORME D'UN TABLEAU
+https://www.educba.com/bootstrap-sort-table/
+
+
+BOOTSTRAP 5
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+https://getbootstrap.com/docs/5.0/content/tables/
+https://getbootstrap.com/docs/5.0/components/dropdowns/
+https://getbootstrap.com/docs/5.0/components/buttons/
+
+THYMELEAF - CONCATENATION DE TEXTE
+https://stackoverflow.com/questions/16119421/thymeleaf-concatenation-could-not-parse-as-expression
+
+
+BOOTSTRAP 3 - ENFIN UN EXEMPLE DE TRI PAR COLONNE QUI MARCHE !!!!
+https://bootsnipp.com/snippets/8G2Q
+
+
+
+BOOTSTRAP - EXEMPLES MULTIPLES
+https://github.com/wenzhixin/bootstrap-table-examples/blob/master/extensions/filter-control.html
